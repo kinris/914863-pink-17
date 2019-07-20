@@ -1,0 +1,26 @@
+.main-nav__list {
+  @include reset;
+  background-color: #283645;
+}
+
+.site-list {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
+
+  color: #ffffff;
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+.site-list__item {
+  padding-top: 15px;
+  padding-bottom: 16px;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}

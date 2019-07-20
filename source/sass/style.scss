@@ -1,3 +1,60 @@
+@import "variables.scss";
+@import "main-nav.scss";
+@import "download.scss";
+@import "advantages.scss";
+@import "reviews.scss";
+@import "price.scss";
+
+
 body {
-  background: #aeaeff;
+  @include reset;
+  @include font-base;
+  // фон на время разметки
+  background-color: pink;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  @include reset;
+  list-style: $list-style;
+}
+
+.content-text {
+  line-height: 30px;
+}
+
+.content-text--mini {
+  line-height: 24px;
+}
+
+.content-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 400;
+
+  color: #ffffff;
 }

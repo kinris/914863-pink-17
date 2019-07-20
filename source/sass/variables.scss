@@ -1,0 +1,19 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+$list-style: none;
+
+@mixin font-base () {
+  font-family: ('Open Sans', Arial, sans-serif);
+  text-align: center;
+  font-size: 14px;
+
+  color: #283645;
+}
+
+@mixin section-padding () {
+  padding-left: 20px;
+  padding-right: 20px;
+}

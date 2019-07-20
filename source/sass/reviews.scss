@@ -1,0 +1,11 @@
+.reviews {
+  @include section-padding;
+}
+
+.reviews__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #000000;
+}
