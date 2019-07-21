@@ -1,14 +1,20 @@
 @import "variables.scss";
 @import "main-nav.scss";
 @import "download.scss";
+@import "button.scss";
 @import "advantages.scss";
 @import "reviews.scss";
 @import "price.scss";
-
+@import "contacts.scss";
 
 body {
   @include reset;
   @include font-base;
+
+  background-image: url(../img/bg-map-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+
   // фон на время разметки
   background-color: pink;
 }
@@ -37,14 +43,17 @@ ul {
 }
 
 .content-text {
+  @include reset;
   line-height: 30px;
 }
 
 .content-text--mini {
+  @include reset;
   line-height: 24px;
 }
 
 .content-title {
+  @include reset;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -57,4 +66,8 @@ ul {
   font-weight: 400;
 
   color: #ffffff;
+}
+
+.page-title--dark {
+  color: #283645;
 }
