@@ -1,36 +1,30 @@
 
-.page-title--head-contacts {
-  margin: 0;
-  padding: 0;
-}
-
-/* .contacts {
-  @include reset;
-  @include section-padding;
-} */
-
 .contacts {
-  /* на время разметки */
+  @include reset;
+  @include section-paddings;
+
+  padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 70px;
+  margin-bottom: 170px;
+  margin-top: -15px;
+
+  background-color: #ffffff;
 }
 
 .contacts__item {
-  margin: 0;
-  padding: 0;
+  @include reset;
   margin-bottom: 28px;
 }
 
 .contacts__item--heder {
-  margin: 0;
-  padding: 0;
+  @include reset;
   margin-bottom: 37px;
 }
 
 .contacts__text {
-  /* @include reset; */
-  margin: 0;
-  padding: 0;
+  @include reset;
   font-weight: 700;
   font-size: 18px;
   color: #283645;

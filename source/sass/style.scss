@@ -1,11 +1,15 @@
 @import "variables.scss";
+@import "page-header.scss";
+@import "page-main.scss";
 @import "main-nav.scss";
 @import "download.scss";
 @import "button.scss";
 @import "advantages.scss";
+@import "slider.scss";
 @import "reviews.scss";
 @import "price.scss";
 @import "contacts.scss";
+@import "photos-list.scss";
 
 body {
   @include reset;
@@ -62,12 +66,17 @@ ul {
 }
 
 .page-title {
+  display: flex;
+  height: 170px;
+  align-items: center;
+  padding-left: 42px;
+  padding-right: 42px;
+
   font-size: 24px;
   font-weight: 400;
 
-  color: #ffffff;
-}
+  background-color: #283645;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
 
-.page-title--dark {
-  color: #283645;
+  color: #ffffff;
 }
