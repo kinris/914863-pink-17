@@ -1,19 +1,22 @@
-@mixin reset {
-  margin: 0;
-  padding: 0;
-}
-
 $list-style: none;
 
-@mixin font-base () {
-  font-family: ("Open Sans", Arial, sans-serif);
-  text-align: center;
-  font-size: 14px;
+// colors
+$white: #ffffff;
+$black: #000000;
 
-  color: #283645;
-}
+$light-blue: #485461;
+$dark-blue: #283645;
 
-@mixin section-paddings () {
-  padding-left: 20px;
-  padding-right: 20px;
-}
+$superdark-pink: #5d344c;
+$dark-pink: #d22856;
+$light-pink: #f1becc;
+
+$dark-gray: #8d949b;
+$gray: #b5b9be;
+$medium-gray: #dddfe0;
+$light-gray: #e5e5e5;
+$background-gray: #f2f2f2;
+
+$light-green: #2aab6d;
+$dark-green: #1c9b5e;
+

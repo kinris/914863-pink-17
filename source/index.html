@@ -2,23 +2,29 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
 </head>
 
-<body class="content-text">
+<body>
 
   <header class="page-header">
-    <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-    <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть
-        меню</span></button>
-    <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть
-        меню</span></button>
+
     <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+
+        <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть
+            меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть
+            меню</span></button>
+      </div>
+
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
           <a>Главная</a>
@@ -37,13 +43,12 @@
   </header>
 
   <main class="page-main">
-    <h1 class="visually-hidden">Pink - раскрась жизнь в розовый!</h1>
+    <h1 class="page-title page-title--background">Взгляните на жизнь иначе!</h1>
     <section class="download">
-      <img class="download__image" src="img/iphone-hand-mobile@1x.png" alt="Фоновое изображение">
-      <h2 class="visually-hidden">Скачать приложение</h2>
+      <!-- <img class="download__image" src="img/iphone-hand-mobile@1x.png" alt="Фоновое изображение"> -->
       <a href="#" class="button">Скачать приложение</a>
       <div class="download__links">
-        <a href="#" class="download__link">
+        <a href="#">
           <span class="visually-hidden">iTunes</span>
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
             y="0px" width="46px" height="56px" viewBox="0 0 46.21 56.753" enable-background="new 0 0 46.21 56.753"
@@ -52,7 +57,7 @@
               d="M38.593,30.15c0.081,8.59,7.535,11.447,7.617,11.483c-0.062,0.202-1.19,4.073-3.927,8.072 c-2.365,3.457-4.82,6.901-8.688,6.973c-3.799,0.07-5.021-2.253-9.365-2.253c-4.344,0-5.702,2.182-9.298,2.32 c-3.733,0.142-6.576-3.739-8.961-7.184c-4.875-7.046-8.598-19.91-3.597-28.593c2.484-4.313,6.925-7.043,11.743-7.114 c3.666-0.069,7.126,2.466,9.366,2.466c2.241,0,6.444-3.049,10.865-2.601c1.85,0.077,7.044,0.747,10.38,5.629 C44.459,19.519,38.531,22.971,38.593,30.15 M31.453,9.062C33.435,6.662,34.769,3.323,34.405,0c-2.857,0.115-6.312,1.904-8.36,4.302 c-1.837,2.123-3.445,5.521-3.011,8.778C26.218,13.326,29.47,11.461,31.453,9.062" />
           </svg>
         </a>
-        <a href="#" class="download__link">
+        <a href="#">
           <span class="visually-hidden">Android</span>
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
             y="0px" width="43px" height="47px" viewBox="0 0 42.084 47.041" enable-background="new 0 0 42.084 47.041"
@@ -67,7 +72,7 @@
               d="M8.03,11.967h26.026c-0.039-2.783-1.234-5.322-3.187-7.275l2.446-4.235c0.082-0.146,0.031-0.331-0.112-0.415 c-0.146-0.084-0.331-0.034-0.415,0.111L30.416,4.26c-2.052-1.853-6.249-3.4-9.374-3.4l0,0c-3.016,0-7.322,1.547-9.374,3.4 L9.296,0.152C9.213,0.007,9.027-0.042,8.881,0.041C8.736,0.125,8.686,0.311,8.77,0.456l2.445,4.235 C9.265,6.645,8.068,9.184,8.03,11.967z M25.323,6.804c-0.002-0.805,0.664-1.46,1.488-1.462c0.826-0.002,1.494,0.648,1.498,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.49,1.462c-0.823,0.002-1.493-0.649-1.496-1.454 C25.323,6.81,25.323,6.807,25.323,6.804z M14.18,6.804c-0.001-0.805,0.665-1.46,1.489-1.462c0.824-0.002,1.494,0.648,1.497,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.488,1.462c-0.825,0.002-1.495-0.649-1.498-1.454 C14.18,6.81,14.18,6.807,14.18,6.804z" />
           </svg>
         </a>
-        <a href="#" class="download__link">
+        <a href="#">
           <span class="visually-hidden">Windows</span>
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
             y="0px" width="43px" height="41px" viewBox="0 0 43.922 41.992" enable-background="new 0 0 43.922 41.992"
@@ -81,31 +86,30 @@
           </svg>
         </a>
       </div>
-      <p class="content-text--mini">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
 
     <!-- преимущества -->
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <p class="advantages__title">Устали от серости мегаполиса?</p>
-      <p class="advantages__title">Нам есть, что вам предложить!</p>
+      <p class="page-title page-title--darkblue advantages__title">Устали от серости мегаполиса?</p>
+      <p class="page-title page-title--darkblue advantages__title">Нам есть, что вам предложить!</p>
       <ul class="advantages__list">
         <li class="advantages__item">
-          <h3 class="content-title">Поднимает настроение</h3>
-          <p class="content-text content-text--mini">Приложение позволит вам победить осеннюю хандру и депрессию
+          <h3 class="advantages__subtitle">Поднимает настроение</h3>
+          <p>Приложение позволит вам победить осеннюю хандру и депрессию
             буквально в несколько кликов!</p>
         </li>
         <li class="advantages__item">
-          <h3 class="content-title">Меняет мир вокруг</h3>
-          <p class="content-text content-text--mini">Сделайте снимок и украсьте его смайликом или текстовой подписью,
-            чтобы усилить эффект</p>
+          <h3 class="advantages__subtitle">Меняет мир вокруг</h3>
+          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </li>
         <li class="advantages__item">
-          <h3 class="content-title">Заводит новых друзей</h3>
-          <p class="content-text content-text--mini">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+          <h3 class="advantages__subtitle">Заводит новых друзей</h3>
+          <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
             заводите новых</p>
         </li>
-        <li><img class="advantages__image" src="img/iphone-screen-mobile@1x.png" alt="Фото телефона со смайликом"></li>
+        <!-- <li><img class="advantages__image" src="img/iphone-screen-mobile@1x.png" alt="Фото телефона со смайликом"></li> -->
       </ul>
     </section>
     <!-- /преимущества -->
@@ -114,19 +118,18 @@
       <div class="slider">
         <h2 class="visually-hidden">Отзывы</h2>
         <ul class="slider__list">
-          <li class="slider__item">
+          <li class="slider__item slider__item--active">
             <p class="reviews__name">Николай Петров</p>
             <p class="reviews__text content-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
               привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
           </li>
         </ul>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--active" type="button"><span
-              class="visually-hidden">Отзыв</span></button>
-          <button class="slider__toggle" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
-          <button class="slider__toggle" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
-        </p>
+        <div class="slider__toggles">
+          <button class="slider__toggle slider__toggle--active" type="button" value="Отзыв"></button>
+          <button class="slider__toggle" type="button" value="Следующий отзыв"></button>
+          <button class="slider__toggle" type="button" value="Следующий отзыв"></button>
+        </div>
       </div>
     </section>
     <!-- /отзывы -->
@@ -134,74 +137,84 @@
     <section class="price">
 
       <h2 class="visually-hidden">Цены</h2>
-      <div class="price-wrapper slider">
-        <table class="price__list slider__list">
-          <thead class="price__list-head">
-            <tr class="slider-item">
-              <th class="price__value">
-                Тариф<p class="price__value price__value--numeral">0,00 USD</p>
-              </th>
-            </tr>
-          </thead>
-          <tbody class="price__list-body">
-            <tr class="slider-item">
-              <td class="price__item price__item--yes">Розовый фильтр</td>
-            </tr>
-            <tr>
-              <td class="price__item price__item--no">Смайлики</td>
-            </tr>
-            <tr>
-              <td class="price__item price__item--no">Комментарии</td>
-            </tr>
-          </tbody>
-        </table>
-        <table class="price__list slider__list">
-          <thead class="price__list-head">
-            <tr class="slider-item">
-              <th class="price__value price__value--hit">
-                Стандарт<p class="price__value price__value--numeral">3,99 USD</p>
-              </th>
-            </tr>
-          </thead>
-          <tbody class="price__list-body">
-            <tr class="slider-item">
-              <td class="price__item price__item--yes">Розовый фильтр</td>
-            </tr>
-            <tr>
-              <td class="price__item price__item--yes">Смайлики</td>
-            </tr>
-            <tr>
-              <td class="price__item price__item--no">Комментарии</td>
-            </tr>
-          </tbody>
-        </table>
-        <table class="price__list slider__list">
-          <thead class="price__list-head">
-            <tr class="slider-item">
-              <th class="price__value">
-                Тариф<p class="price__value price__value--numeral">0,00 USD</p>
-              </th>
-            </tr>
-          </thead>
-          <tbody class="price__list-body">
-            <tr class="slider-item">
-              <td class="price__item--yes">Розовый фильтр</td>
-            </tr>
-            <tr>
-              <td class="price__item--yes">Смайлики</td>
-            </tr>
-            <tr>
-              <td class="price__item--yes">Комментарии</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="slider">
+        <div class="slider__list">
+          <div class="slider__item">
+            <table class="price-table">
+              <thead class="price-table__head">
+                <tr>
+                  <th class="price-table__value">
+                    База<p class="price-table__value price-table__value--numeral">1,99 USD</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="price-table__body">
+                <tr>
+                  <td class="price-table__item">Розовый фильтр</td>
+                </tr>
+                <tr>
+                  <td class="price-table__item">Смайлики</td>
+                </tr>
+                <tr>
+                  <td class="price-table__item">Комментарии</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="slider__item slider__item--active">
+            <table class="price-table">
+              <thead class="price-table__head">
+                <tr>
+                  <th class="price-table__value">
+                    Стандарт<p class="price-table__value price-table__value--numeral">3,99 USD</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="price-table__body">
+                <tr>
+                  <td class="price-table__item">Розовый фильтр</td>
+                </tr>
+                <tr>
+                  <td class="price-table__item">Смайлики</td>
+                </tr>
+                <tr>
+                  <td class="price-table__item">Комментарии</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="slider__item">
+            <table class="price-table">
+              <thead class="price-table__head">
+                <tr>
+                  <th class="price-table__value">
+                    Анлим<p class="price-table__value price-table__value--numeral">9,99 USD</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="price-table__body">
+                <tr>
+                  <td class="price-table__item">Розовый фильтр</td>
+                </tr>
+                <tr>
+                  <td class="price-table__item">Смайлики</td>
+                </tr>
+                <tr>
+                  <td class="price-table__item">Комментарии</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-      <p class="price__toggles slider__toggles">
-        <button class="slider__toggle" type="button"><span class="visually-hidden">Тариф</span></button>
-        <button class="slider__toggle slider__toggle--active" type="button"><span
-            class="visually-hidden">Стандарт</span></button>
-        <button class="slider__toggle" type="button"><span class="visually-hidden">Тариф</span></button>
-      </p>
+
+      <div class="slider__toggles">
+        <button class="slider__toggle" type="button" value="База"></button>
+        <button class="slider__toggle slider__toggle--active" type="button" value="Стандарт"></button>
+        <button class="slider__toggle" type="button" value="Анлим"></button>
+      </div>
     </section>
     <!-- /цены -->
     <!-- контакты -->
@@ -209,7 +222,7 @@
 
       <ul class="contacts__list">
         <li class="contacts__item contacts__item--heder">
-          <h2 class="advantages__title">Остались вопросы? Свяжитесь с нами!</h2>
+          <h2 class="page-title page-title--darkblue">Остались вопросы? Свяжитесь с нами!</h2>
         </li>
         <li class="contacts__item">
           <p class="contacts__text">Звоните:</p>
@@ -225,6 +238,9 @@
         </li>
       </ul>
     </section>
+    <div class="map">
+      <img class="map__img" src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, 19/8">
+    </div>
     <!-- /контакты -->
   </main>
 

@@ -1,21 +1,16 @@
 .download {
   display: flex;
   flex-direction: column;
+  padding-top: 28px;
+  padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  height: 666px;
 
-  background-color: #1d2631;
+  background-color: $dark-blue;
 
-  background-image: url(../img/bg-back-mobile@1x.jpg);
-  background-repeat: no-repeat;
+  font-family: ("Open Sans light", Arial, sans-serif);
 
-  color: #ffffff;
-}
-
-.download__image {
-  margin-top: 109px;
-  margin-bottom: 28px;
+  color: $white;
 }
 
 .download__links {
@@ -26,8 +21,4 @@
   margin-top: 28px;
   padding-left: 37px;
   padding-right: 37px;
-}
-
-.download__link {
-  color: #ffffff;
 }

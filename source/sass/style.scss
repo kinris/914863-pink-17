@@ -1,82 +1,20 @@
 @import "variables.scss";
-@import "page-header.scss";
-@import "page-main.scss";
-@import "main-nav.scss";
-@import "download.scss";
-@import "button.scss";
-@import "advantages.scss";
-@import "slider.scss";
-@import "reviews.scss";
-@import "price.scss";
-@import "contacts.scss";
-@import "photos-list.scss";
-
-body {
-  @include reset;
-  @include font-base;
-
-  background-image: url(../img/bg-map-mobile@1x.png);
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-
-  // фон на время разметки
-  background-color: pink;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-ul {
-  @include reset;
-  list-style: $list-style;
-}
-
-.content-text {
-  @include reset;
-  line-height: 30px;
-}
-
-.content-text--mini {
-  @include reset;
-  line-height: 24px;
-}
-
-.content-title {
-  @include reset;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-
-  color: #000000;
-}
-
-.page-title {
-  display: flex;
-  height: 170px;
-  align-items: center;
-  padding-left: 42px;
-  padding-right: 42px;
-
-  font-size: 24px;
-  font-weight: 400;
-
-  background-color: #283645;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
-
-  color: #ffffff;
-}
+@import "mixins.scss";
+@import "common.scss";
+@import "blocks/site-list";
+@import "blocks/page-header.scss";
+@import "blocks/page-title.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/download.scss";
+@import "blocks/button.scss";
+@import "blocks/advantages.scss";
+@import "blocks/slider.scss";
+@import "blocks/reviews.scss";
+@import "blocks/price.scss";
+@import "blocks/contacts.scss";
+@import "blocks/photos.scss";
+@import "blocks/photos-list.scss";
+@import "blocks/photo-editor.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";

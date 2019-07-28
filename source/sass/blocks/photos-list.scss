@@ -1,0 +1,77 @@
+.photos-list {
+  @include reset;
+  @include section-paddings;
+}
+
+.photos-list__item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  text-align: left;
+  background-color: $background-gray;
+}
+
+.photos-list li:last-child {
+  margin-bottom: 0;
+}
+
+.photos-list__author {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  color: $dark-blue;
+}
+
+.photos-list__time {
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.photos-list__text {
+  @include reset;
+  padding-left: 18px;
+  padding-bottom: 16px;
+}
+
+.photos-list__likes {
+  @include reset;
+  padding-left: 50px;
+
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $dark-pink;
+
+  background-image: url(../img/icon-heart.svg);
+  background-position-x: 18px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+
+.photos-list__image {
+  @include reset;
+  width: 100%;
+  padding-bottom: 11px;
+}
+
+// .photos-list__image--wide {}
+
+.photos-list__image-flag {
+  @include reset;
+  @include section-paddings;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background-color: $dark-pink;
+
+  text-transform: uppercase;
+
+  color: $white;
+}

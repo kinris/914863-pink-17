@@ -4,13 +4,8 @@
   @include section-paddings;
 
   padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 70px;
-  margin-bottom: 170px;
-  margin-top: -15px;
 
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .contacts__item {
@@ -20,17 +15,17 @@
 
 .contacts__item--heder {
   @include reset;
-  margin-bottom: 37px;
 }
 
 .contacts__text {
   @include reset;
+  padding-bottom: 10px;
   font-weight: 700;
   font-size: 18px;
-  color: #283645;
+  color: $dark-blue;
 }
 
 .contacts__link {
-  font-size: 24px;
-  color: #d22856;
+  @include page-title;
+  color: $dark-pink;
 }

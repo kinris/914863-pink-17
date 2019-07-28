@@ -1,0 +1,25 @@
+.page-footer {
+  margin-bottom: 40px;
+}
+
+.page-footer__logo {
+  display: block;
+  margin-bottom: 40px;
+
+  &:hover {
+    background-image: url(/img/logo-pink-pink-mobile.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.page-footer__copyright {
+  @include reset;
+}
+
+.copyright__copyright-text {
+  @include reset;
+}
+
+.copyright__copyright-link {
+  @include reset;
+}

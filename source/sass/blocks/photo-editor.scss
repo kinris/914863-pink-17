@@ -1,0 +1,73 @@
+.photo-editor {
+  @include reset;
+  @include section-paddings;
+  padding-top: 20px;
+  padding-bottom: 29px;
+  margin-bottom: 40px;
+
+  background-color: $background-gray;
+}
+
+.photo-editor__image {
+  width: 100%;
+  padding-bottom: 42px;
+}
+
+.photo-editor__effects {
+  @include reset;
+  @include section-paddings;
+}
+
+.photo-editor__effects:checked {
+  @include reset;
+}
+
+.photo-editor__range {
+  @include reset;
+  padding-top: 33px;
+  padding-bottom: 28px;
+  margin-bottom: 38px;
+  display: block;
+
+  border-bottom: 1px solid $medium-gray;
+}
+
+.photo-editor__buttons {
+  @include reset;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-editor__button {
+  margin-bottom: 12px;
+}
+
+.photo-editor__on {
+  border: 3px solid $dark-pink;
+  color: $dark-pink;
+
+  &:hover {
+    background-color: $dark-pink;
+    color: $white;
+  }
+
+  &:active {
+    color: $superdark-pink;
+  }
+}
+
+.photo-editor__off {
+  border: 3px solid $medium-gray;
+  color: $medium-gray;
+
+  &:hover {
+    border: 3px solid $gray;
+    color: $gray;
+  }
+
+  &:active {
+    background-color: $gray;
+    color: $light-gray;
+  }
+}
+

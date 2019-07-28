@@ -1,0 +1,18 @@
+.photos {
+  @include reset;
+}
+
+.photos__text {
+  @include reset;
+  padding-left: 29px;
+  padding-right: 29px;
+  padding-top: 46px;
+  padding-bottom: 48px;
+
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.photos__image {
+  width: 100%;
+}
