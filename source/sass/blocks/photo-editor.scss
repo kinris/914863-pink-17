@@ -1,11 +1,17 @@
 .photo-editor {
   @include reset;
-  @include section-paddings;
-  padding-top: 20px;
-  padding-bottom: 29px;
+  @include container;
   margin-bottom: 40px;
+}
+
+.photo-editor__top {
+  @include container;
+  padding-top: $mobile-paddings;
+  margin-left: (-$mobile-paddings);
+  margin-right: (-$mobile-paddings);
 
   background-color: $background-gray;
+  border-bottom: 1px solid $medium-gray;
 }
 
 .photo-editor__image {
@@ -26,10 +32,18 @@
   @include reset;
   padding-top: 33px;
   padding-bottom: 28px;
-  margin-bottom: 38px;
   display: block;
+}
 
-  border-bottom: 1px solid $medium-gray;
+.photo-editor__bottom {
+  @include container;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  margin-left: (-$mobile-paddings);
+  margin-right: (-$mobile-paddings);
+
+  background-color: $background-gray;
 }
 
 .photo-editor__buttons {
@@ -38,7 +52,7 @@
   flex-direction: column;
 }
 
-.photo-editor__button {
+.photo-editor__button:first-child {
   margin-bottom: 12px;
 }
 

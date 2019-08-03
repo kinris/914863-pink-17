@@ -4,9 +4,12 @@
 }
 
 @mixin font-base () {
-  font-family: ("Open Sans", Arial, sans-serif);
-  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
+
+  text-align: center;
   line-height: 24px;
 
   color: $dark-blue;
@@ -18,9 +21,23 @@
 }
 
 @mixin page-title () {
-  font-family: ("Open Sans light", Arial, sans-serif);
-  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
   font-size: 24px;
+
+  text-align: center;
   line-height: 1em;
-  font-weight: normal;
+}
+
+@mixin container {
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include section-paddings;
+
+  @media (min-width: 960px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

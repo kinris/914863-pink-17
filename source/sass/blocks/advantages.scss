@@ -12,6 +12,7 @@
 .advantages__title {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 38px;
 }
 
 .advantages__subtitle {
@@ -28,7 +29,7 @@
   padding-bottom: 32px;
 }
 
-// .advantages__image {
-//   margin-top: 40px;
-//   margin-bottom: -10px;
-// }
+.advantages__image {
+  @include container;
+  display: block;
+}

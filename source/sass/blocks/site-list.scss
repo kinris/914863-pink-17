@@ -1,13 +1,11 @@
-.site-list {
-  font-weight: bold;
-}
-
-.site-list a {
+.site-list__item a {
   display: block;
-  padding: 12px 21px;
-  padding-bottom: 13px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   font-size: 18px;
+  font-weight: bold;
   line-height: 1em;
   color: $white;
   text-transform: uppercase;

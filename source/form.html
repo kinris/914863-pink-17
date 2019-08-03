@@ -15,7 +15,8 @@
 
     <nav class="main-nav">
       <div class="main-nav__wrapper">
-        <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+        <a href="index.html"><img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75"
+            height="22" alt="Pink"></a>
 
         <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть
             меню</span></button>
@@ -41,60 +42,103 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="banner">
+      <h1 class="page-title page-title--white">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+
     <section class="contest">
-      <p class="content-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-        бонусную карту!</p>
+      <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form action="#" method="POST" class="contest__form form">
-        <fieldset class="form__fieldset">
-          <label class="form__label" for="surname">Фамилия:</label>
-          <input class="form__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
-          <label class="form__label" for="name">Имя:</label>
-          <input class="form__text" type="text" name="name" id="name" placeholder="Введите ваше имя" required>
-          <label class="form__label" for="last-name">Отчество:</label>
-          <input class="form__text" type="text" name="last-name" id="last-name" placeholder="Ну и отчество тоже">
-        </fieldset>
+        <div class="form__wrapper">
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label" for="surname">Фамилия:</label>
+              <input class="form__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="name">Имя:</label>
+              <input class="form__text" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="last-name">Отчество:</label>
+              <input class="form__text" type="text" name="last-name" id="last-name" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+        </div>
 
-        <fieldset class="form__fieldset form__fieldset--gray">
-          <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
-          <input class="form__checkbox" type="checkbox" name="selfi" id="selfi" checked>
-          <label class="form__label" for="selfi">Сделал селфи с акулой</label>
-          <input class="form__checkbox" type="checkbox" name="beach" id="beach" checked>
-          <label class="form__label" for="beach">Обгорел на пляже</label>
-          <input class="form__checkbox" type="checkbox" name="norris" id="norris">
-          <label class="form__label" for="norris">Видел Чака Норриса</label>
-          <input class="form__checkbox" type="checkbox" name="souvenir" id="souvenir">
-          <label class="form__label" for="souvenir">Накупил сувениров</label>
-          <input class="form__checkbox" type="checkbox" name="tower" id="tower" checked>
-          <label class="form__label" for="tower">Удержал башню</label>
-          <input class="form__checkbox" type="checkbox" name="hotel" id="hotel">
-          <label class="form__label" for="hotel">Разгромил отель</label>
-        </fieldset>
+        <div class="form__wrapper form__wrapper--gray">
+          <span class="form__title">Ваши безбашенные достижения в путешествии</span>
+          <ul class="form__list">
+            <li class="form__item">
+              <input class="form__checkbox" type="checkbox" name="selfi" id="selfi" checked>
+              <label class="form__label form__label--dark" for="selfi">Сделал селфи с акулой</label>
+            </li>
+            <li class="form__item">
+              <input class="form__checkbox" type="checkbox" name="beach" id="beach" checked>
+              <label class="form__label form__label--dark" for="beach">Обгорел на пляже</label>
+            </li>
+            <li class="form__item">
+              <input class="form__checkbox" type="checkbox" name="norris" id="norris">
+              <label class="form__label form__label--dark" for="norris">Видел Чака Норриса</label>
+            </li>
+            <li class="form__item">
+              <input class="form__checkbox" type="checkbox" name="souvenir" id="souvenir">
+              <label class="form__label form__label--dark" for="souvenir">Накупил сувениров</label>
+            </li>
+            <li class="form__item">
+              <input class="form__checkbox" type="checkbox" name="tower" id="tower" checked>
+              <label class="form__label form__label--dark" for="tower">Удержал башню</label>
+            </li>
+            <li class="form__item">
+              <input class="form__checkbox" type="checkbox" name="hotel" id="hotel">
+              <label class="form__label form__label--dark" for="hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </div>
 
-        <fieldset class="form__fieldset">
-          <label class="form__label">Номер телефона</label>
-          <input class="form__tel" type="tel" name="phone-number" id="phone-number" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
-            placeholder="Номер, пожалуйста">
-          <label class="form__label" for="email">Адрес почты</label>
-          <input class="form__email" type="email" name="email" id="email"
-            pattern="/^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i" placeholder="Введите почту*" required>
-        </fieldset>
+        <div class="form__wrapper">
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label">Номер телефона</label>
+              <input class="form__text" type="tel" name="phone-number" id="phone-number"
+                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="email">Адрес почты</label>
+              <input class="form__text" type="email" name="email" id="email"
+                pattern="/^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i" placeholder="Введите почту *" required>
+            </li>
+          </ul>
+        </div>
 
-        <fieldset class="form__fieldset form__fieldset--gray">
-          <legend class="form__title">С каким приложением путешествовали?</legend>
-          <input class="form__radio" type="radio" name="app" id="ios" value="ios" checked>
-          <label class="form__label" for="ios">Pink для iOS</label>
-          <input class="form__radio" type="radio" name="app" id="android" value="android">
-          <label class="form__label" for="android">Pink на Android</label>
-          <input class="form__radio" type="radio" name="app" id="windows-phone" value="windows-phone">
-          <label class="form__label" for="windows-phone">Windows Phone</label>
-        </fieldset>
+        <div class="form__wrapper form__wrapper--gray">
+          <span class="form__title">С каким приложением путешествовали?</span>
+          <ul class="form__list">
+            <li class="form__item">
+              <input class="form__radio" type="radio" name="app" id="ios" value="ios" checked>
+              <label class="form__label form__label--dark" for="ios">Pink для iOS</label>
+            </li>
+            <li class="form__item">
+              <input class="form__radio" type="radio" name="app" id="android" value="android">
+              <label class="form__label form__label--dark" for="android">Pink на Android</label>
+            </li>
+            <li class="form__item">
+              <input class="form__radio" type="radio" name="app" id="windows-phone" value="windows-phone">
+              <label class="form__label form__label--dark" for="windows-phone">Windows Phone</label>
+            </li>
+          </ul>
+        </div>
 
-        <fieldset class="form__fieldset">
-          <legend class="form__title">Опишите свои эмоции</legend>
-          <textarea class="form__textarea" name="emotion" id="emotion"
-            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </fieldset>
+        <div class="form__wrapper">
+          <span class="form__title">Опишите свои эмоции</span>
+          <ul class="form__list">
+            <li class="form__item">
+              <textarea class="form__text" rows="5" name="emotion" id="emotion"
+                placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </li>
+          </ul>
+        </div>
+
         <div class="form__submit">
           <button class="button button--green button--big" type="submit">Отправить форму</button>
           <p class="form__require"><span class="form__require form__require--red">*</span> — обязательные поля</p>
@@ -111,7 +155,7 @@
       <li>
         <a class="social__item" href="#">
           <span class="visually-hidden">Мы в Твиттере</span>
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="19" height="15" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
             xml:space="preserve">
             <g id="W6EeEF_1_">
@@ -127,7 +171,7 @@
       <li>
         <a class="social__item" href="#">
           <span class="visually-hidden">Мы на Фейсбуке</span>
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="9" height="19" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944"
             xml:space="preserve">
             <path fill="#d22856"
@@ -139,7 +183,7 @@
       <li>
         <a class="social__item" href="#">
           <span class="visually-hidden">Мы на Ютубе</span>
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="15" height="14" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96"
             xml:space="preserve">
             <path fill="#d22856"
@@ -149,27 +193,25 @@
       </li>
     </ul>
 
-    <div class="page-footer__copyright">
-      <b class="copyright__copyright-text">Разработано</b>
-      <a class="copyright__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span
-          class="visually-hidden">HTML Academy</span><img src="img/logo-htmlacademy.svg" width="24" height="37"
-          alt="HTML Academy">
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+          Academy</span><img src="img/logo-htmlacademy.svg" width="24" height="37" alt="HTML Academy">
       </a>
     </div>
   </footer>
 
+
   <!-- всплывающие окна -->
   <div class="pop-up">
     <p class="content-title">Что-то пошло не так!</p>
-    <p class="content-text content-text--mini">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-    </p>
+    <p class="content-text content-text--mini">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <button class="button button--green button--big" type="button">OK</button>
   </div>
 
   <div class="pop-up">
     <p class="content-title">Ваша заявка отправлена</p>
-    <p class="content-text content-text--mini">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее
-      время мы рассмотрим ее и оповестим вас.</p>
+    <p class="content-text content-text--mini">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
     <button class="button button--green button--big" type="button">Закрыть окно</button>
   </div>
   <!-- /всплывающие окна -->

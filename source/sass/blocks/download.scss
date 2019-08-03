@@ -1,22 +1,27 @@
 .download {
   padding-top: 28px;
   padding-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: $mobile-paddings;
+  padding-right: $mobile-paddings;
 
   background-color: $dark-blue;
-
-  font-family: "Open Sans light", "Arial", sans-serif;
 
   color: $white;
 }
 
+// .download__wrapper {}
+
 .download__links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   margin-top: 28px;
   padding-left: 37px;
   padding-right: 37px;
+}
+
+.download__link {
+  padding-left: 20px;
+  padding-right: 20px;
 }

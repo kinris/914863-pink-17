@@ -1,25 +1,8 @@
 .page-title {
   @include reset;
   @include page-title;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+.page-title--white {
   color: $white;
-}
-
-.page-title--background {
-  min-height: 170px;
-  padding-left: 42px;
-  padding-right: 42px;
-
-  background-color: $dark-blue;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-}
-
-.page-title--darkblue {
-  padding-bottom: 38px;
-  color: $dark-blue;
 }

@@ -1,6 +1,5 @@
 .photos-list {
   @include reset;
-  @include section-paddings;
 }
 
 .photos-list__item {
@@ -57,7 +56,11 @@
   padding-bottom: 11px;
 }
 
-// .photos-list__image--wide {}
+.photos-list__image--wide {
+  margin-left: (-$mobile-paddings);
+  margin-right: (-$mobile-paddings);
+  width: auto;
+}
 
 .photos-list__image-flag {
   @include reset;
