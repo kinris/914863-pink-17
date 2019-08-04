@@ -4,7 +4,7 @@
 }
 
 @mixin font-base () {
-  font-family: "Open Sans";
+  font-family: $opensans;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -21,7 +21,7 @@
 }
 
 @mixin page-title () {
-  font-family: "Open Sans";
+  font-family: $opensans;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;

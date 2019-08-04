@@ -14,7 +14,6 @@
 
 .form__list {
   @include reset;
-  padding-right: $mobile-paddings;
 
   text-align: left;
 }
@@ -48,6 +47,9 @@
 }
 
 .form__text {
+  box-sizing: border-box;
+  width: 100%;
+
   padding-left: $mobile-paddings;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -57,23 +59,8 @@
 
   border: 2px solid $light-gray;
   border-radius: 3px;
-
-  width: 100%;
 }
 
 .form__submit {
   padding-bottom: 30px;
-}
-
-.button--green {
-  width: 100%;
-
-  border-radius: 5px;
-
-  background-color: $light-green;
-
-  &:hover {
-    background-color: $dark-green;
-    color: $white;
-  }
 }
