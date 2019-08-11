@@ -2,17 +2,12 @@
   @include reset;
   @include container;
   margin-bottom: 40px;
-}
-
-.photo-editor__top {
-  @include container;
   padding-top: $mobile-paddings;
-  margin-left: (-$mobile-paddings);
-  margin-right: (-$mobile-paddings);
 
   background-color: $background-gray;
-  border-bottom: 1px solid $medium-gray;
 }
+
+// .photo-editor__togls {}
 
 .photo-editor__image {
   width: 100%;
@@ -21,24 +16,47 @@
 
 .photo-editor__effects {
   @include reset;
-  @include section-paddings;
+  @include container;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: (-$mobile-paddings);
+  margin-right: (-$mobile-paddings);
+  padding-bottom: 75px;
+
+  border-bottom: 1px solid $medium-gray;
+
+  position: relative;
 }
 
-.photo-editor__effects:checked {
+.photo-editor__effect {
+  @include reset;
+  padding-left: $mobile-paddings;
+  padding-right: $mobile-paddings;
+}
+
+.photo-editor__effect:checked {
   @include reset;
 }
 
 .photo-editor__range {
   @include reset;
-  padding-top: 33px;
-  padding-bottom: 28px;
+  display: none;
+  position: absolute;
+  left: 40px;
+  bottom: 30px;
+
+  width: 240px;
+}
+
+input:checked ~ .photo-editor__range {
   display: block;
 }
 
 .photo-editor__bottom {
   @include container;
-  padding-top: 40px;
-  padding-bottom: 40px;
 
   margin-left: (-$mobile-paddings);
   margin-right: (-$mobile-paddings);
@@ -50,6 +68,9 @@
   @include reset;
   display: flex;
   flex-direction: column;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .photo-editor__button:first-child {
@@ -72,6 +93,8 @@
 
 .photo-editor__off {
   border: 3px solid $medium-gray;
+  background-color: $background-gray;
+
   color: $medium-gray;
 
   &:hover {

@@ -51,8 +51,9 @@
     <section class="contest">
       <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
         бонусную карту!</p>
+
       <form action="#" method="POST" class="contest__form form">
-        <div class="form__wrapper">
+        <fieldset class="form__fieldset">
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label" for="surname">Фамилия:</label>
@@ -68,10 +69,10 @@
               <input class="form__text" type="text" name="last-name" id="last-name" placeholder="Ну и отчество тоже">
             </li>
           </ul>
-        </div>
+        </fieldset>
 
-        <div class="form__wrapper form__wrapper--gray">
-          <span class="form__title">Ваши безбашенные достижения в путешествии</span>
+        <fieldset class="form__fieldset form__fieldset--gray">
+          <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
           <ul class="form__list">
             <li class="form__item">
               <input class="form__checkbox" type="checkbox" name="selfi" id="selfi" checked>
@@ -98,9 +99,9 @@
               <label class="form__label form__label--dark" for="hotel">Разгромил отель</label>
             </li>
           </ul>
-        </div>
+        </fieldset>
 
-        <div class="form__wrapper">
+        <fieldset class="form__fieldset">
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label">Номер телефона</label>
@@ -113,10 +114,10 @@
                 pattern="/^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i" placeholder="Введите почту *" required>
             </li>
           </ul>
-        </div>
+        </fieldset>
 
-        <div class="form__wrapper form__wrapper--gray">
-          <span class="form__title">С каким приложением путешествовали?</span>
+        <fieldset class="form__fieldset form__fieldset--gray">
+          <legend class="form__title form__title--gray">С каким приложением путешествовали?</legend>
           <ul class="form__list">
             <li class="form__item">
               <input class="form__radio" type="radio" name="app" id="ios" value="ios" checked>
@@ -131,23 +132,19 @@
               <label class="form__label form__label--dark" for="windows-phone">Windows Phone</label>
             </li>
           </ul>
-        </div>
+        </fieldset>
 
-        <div class="form__wrapper">
-          <span class="form__title">Опишите свои эмоции</span>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Опишите свои эмоции</legend>
           <ul class="form__list">
             <li class="form__item">
               <textarea class="form__text" rows="5" name="emotion" id="emotion"
                 placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </li>
           </ul>
-        </div>
-
-        <div class="form__submit">
-          <button class="button button--green button--big" type="submit">Отправить форму</button>
-          <p class="form__require"><span class="form__require form__require--red">*</span> — обязательные поля</p>
-        </div>
+        </fieldset>
       </form>
+
     </section>
   </main>
 

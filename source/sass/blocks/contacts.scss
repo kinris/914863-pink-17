@@ -7,18 +7,18 @@
   background-color: $white;
 }
 
+.contacts__header {
+  @include reset;
+  margin-bottom: 38px;
+}
+
 .contacts__title {
   @include reset;
-  padding-bottom: 38px;
 }
 
 .contacts__item {
   @include reset;
   margin-bottom: 28px;
-}
-
-.contacts__item--header {
-  @include reset;
 }
 
 .contacts__text {
