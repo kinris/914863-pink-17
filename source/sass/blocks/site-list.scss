@@ -1,0 +1,27 @@
+.site-list__item a {
+  display: block;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1em;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $dark-blue;
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $light-blue;
+}
+
+.site-list a[href] {
+  &:hover {
+    color: $dark-pink;
+  }
+
+  &:active {
+    color: $superdark-pink;
+  }
+}

@@ -1,0 +1,17 @@
+.banner {
+  min-height: 170px;
+  padding-left: $mobile-paddings;
+  padding-right: $mobile-paddings;
+  padding-top: 30px;
+  align-items: center;
+
+  background-color: $dark-blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.banner__image {
+  display: block;
+  margin-top: 30px;
+  margin-left: (-$mobile-paddings);
+}

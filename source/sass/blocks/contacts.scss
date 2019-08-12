@@ -1,0 +1,37 @@
+.contacts {
+  @include reset;
+  @include section-paddings;
+
+  padding-top: 40px;
+
+  background-color: $white;
+}
+
+.contacts__header {
+  @include reset;
+  margin-bottom: 38px;
+}
+
+.contacts__title {
+  @include reset;
+}
+
+.contacts__item {
+  @include reset;
+  margin-bottom: 28px;
+}
+
+.contacts__text {
+  @include reset;
+
+  font-weight: 700;
+  font-size: 18px;
+
+  color: $dark-blue;
+}
+
+.contacts__link {
+  @include page-title;
+
+  color: $dark-pink;
+}

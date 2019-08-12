@@ -1,0 +1,12 @@
+.copyright {
+  @include reset;
+}
+
+.copyright__text {
+  padding-right: 10px;
+}
+
+.copyright__link {
+  vertical-align: middle;
+  display: inline-block;
+}

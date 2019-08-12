@@ -1,0 +1,38 @@
+.button {
+  display: block;
+  border: 3px solid $white;
+  border-radius: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+
+  color: $white;
+
+  &:hover {
+    background-color: $white;
+    color: $dark-pink;
+  }
+
+  &:active {
+    background-color: $white;
+    color: $light-pink;
+  }
+}
+
+.button--green {
+  width: 100%;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: $light-green;
+
+  &:hover {
+    background-color: $dark-green;
+    color: $white;
+  }
+}

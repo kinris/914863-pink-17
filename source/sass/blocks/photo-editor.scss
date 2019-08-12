@@ -1,0 +1,109 @@
+.photo-editor {
+  @include reset;
+  @include container;
+  margin-bottom: 40px;
+  padding-top: $mobile-paddings;
+
+  background-color: $background-gray;
+}
+
+// .photo-editor__togls {}
+
+.photo-editor__image {
+  width: 100%;
+  padding-bottom: 42px;
+}
+
+.photo-editor__effects {
+  @include reset;
+  @include container;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: (-$mobile-paddings);
+  margin-right: (-$mobile-paddings);
+  padding-bottom: 75px;
+
+  border-bottom: 1px solid $medium-gray;
+
+  position: relative;
+}
+
+.photo-editor__effect {
+  @include reset;
+  padding-left: $mobile-paddings;
+  padding-right: $mobile-paddings;
+}
+
+.photo-editor__effect:checked {
+  @include reset;
+}
+
+.photo-editor__range {
+  @include reset;
+  display: none;
+  position: absolute;
+  left: 40px;
+  bottom: 30px;
+
+  width: 240px;
+}
+
+input:checked ~ .photo-editor__range {
+  display: block;
+}
+
+.photo-editor__bottom {
+  @include container;
+
+  margin-left: (-$mobile-paddings);
+  margin-right: (-$mobile-paddings);
+
+  background-color: $background-gray;
+}
+
+.photo-editor__buttons {
+  @include reset;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.photo-editor__button:first-child {
+  margin-bottom: 12px;
+}
+
+.photo-editor__on {
+  border: 3px solid $dark-pink;
+  color: $dark-pink;
+
+  &:hover {
+    background-color: $dark-pink;
+    color: $white;
+  }
+
+  &:active {
+    color: $superdark-pink;
+  }
+}
+
+.photo-editor__off {
+  border: 3px solid $medium-gray;
+  background-color: $background-gray;
+
+  color: $medium-gray;
+
+  &:hover {
+    border: 3px solid $gray;
+    color: $gray;
+  }
+
+  &:active {
+    background-color: $gray;
+    color: $light-gray;
+  }
+}

@@ -1,0 +1,35 @@
+.advantages {
+  padding-top: 44px;
+}
+
+.advantages__list {
+  @include reset;
+  @include section-paddings;
+  background-color: $background-gray;
+  padding-top: 52px;
+}
+
+.advantages__title {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 38px;
+}
+
+.advantages__subtitle {
+  @include reset;
+  padding-bottom: 11px;
+
+  font-size: 18px;
+
+  color: #000000;
+}
+
+.advantages__item p {
+  @include reset;
+  padding-bottom: 32px;
+}
+
+.advantages__image {
+  @include container;
+  display: block;
+}

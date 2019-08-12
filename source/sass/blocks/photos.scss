@@ -1,0 +1,16 @@
+.photos {
+  @include reset;
+  @include container;
+}
+
+.photos__text {
+  @include reset;
+  padding-top: 44px;
+  padding-bottom: 34px;
+
+  line-height: 30px;
+}
+
+.photos__image {
+  width: 100%;
+}

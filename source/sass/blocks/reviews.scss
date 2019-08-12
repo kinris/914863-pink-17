@@ -1,0 +1,22 @@
+.reviews {
+  @include section-paddings;
+  padding-top: 44px;
+  padding-bottom: 40px;
+}
+
+.reviews__name {
+  @include reset;
+  padding-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #000000;
+}
+
+.reviews__text {
+  @include reset;
+  line-height: 30px;
+  padding-bottom: 17px;
+}

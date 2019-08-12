@@ -1,0 +1,8 @@
+.page-title {
+  @include reset;
+  @include page-title;
+}
+
+.page-title--white {
+  color: $white;
+}
