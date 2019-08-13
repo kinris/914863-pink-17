@@ -127,7 +127,7 @@
       <p class="photos__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
     </section>
     <!-- /фотографии пользователей -->
-    <!-- добавление фотографий -->
+    <!-- редактирование фотографий -->
     <section class="photo-editor">
       <form action="https://echo.htmlacademy.ru" method="POST" class="form-editor">
         <h2 class="visually-hidden">Редактор фотографий</h2>
@@ -139,7 +139,7 @@
             <li class="photo-editor__effect">
               <input type="radio" name="editor" id="crop" class="visually-hidden" value="Обрезка" checked>
               <label for="crop">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" class="photo-editor__svg photo-editor__svg--active" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
                   viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                   <path fill="none" d="M0,0h48v48H0V0z" />
@@ -153,7 +153,7 @@
             <li class="photo-editor__effect">
               <input type="radio" name="editor" id="fill" class="visually-hidden" value="Заливка">
               <label for="fill">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" class="photo-editor__svg" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
                   viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                   <path fill="none" d="M0,0h48v48H0V0z" />
@@ -168,10 +168,10 @@
             <li class="photo-editor__effect">
               <input type="radio" name="editor" id="contrast" class="visually-hidden" value="Контраст">
               <label for="contrast">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" class="photo-editor__svg" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px"
                   viewBox="-36 -8 32 33" enable-background="new -36 -8 32 33" xml:space="preserve">
-                  <path fill="#231F20"
+                  <path
                     d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
                   <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
                 </svg>
@@ -189,7 +189,7 @@
       </form>
     </section>
   </main>
-  <!-- /добавление фотографий -->
+  <!-- /редактирование фотографий -->
 
   <footer class="page-footer">
     <a class="page-footer__logo" href="index.html"><img src="img/logo-pink-blue-mobile.svg"

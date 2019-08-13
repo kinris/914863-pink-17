@@ -52,7 +52,8 @@
       <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
         бонусную карту!</p>
 
-      <form action="#" method="POST" class="contest__form form">
+      <form action="#" method="POST" class="form">
+        <!-- ФИО -->
         <fieldset class="form__fieldset">
           <ul class="form__list">
             <li class="form__item">
@@ -71,36 +72,46 @@
           </ul>
         </fieldset>
 
+        <!-- Достижения -->
         <fieldset class="form__fieldset form__fieldset--gray">
-          <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+          <div class="form__title">
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+          </div>
           <ul class="form__list">
+
             <li class="form__item">
               <input class="form__checkbox" type="checkbox" name="selfi" id="selfi" checked>
               <label class="form__label form__label--dark" for="selfi">Сделал селфи с акулой</label>
             </li>
+
             <li class="form__item">
               <input class="form__checkbox" type="checkbox" name="beach" id="beach" checked>
               <label class="form__label form__label--dark" for="beach">Обгорел на пляже</label>
             </li>
+
             <li class="form__item">
               <input class="form__checkbox" type="checkbox" name="norris" id="norris">
               <label class="form__label form__label--dark" for="norris">Видел Чака Норриса</label>
             </li>
+
             <li class="form__item">
               <input class="form__checkbox" type="checkbox" name="souvenir" id="souvenir">
               <label class="form__label form__label--dark" for="souvenir">Накупил сувениров</label>
             </li>
+
             <li class="form__item">
               <input class="form__checkbox" type="checkbox" name="tower" id="tower" checked>
               <label class="form__label form__label--dark" for="tower">Удержал башню</label>
             </li>
+
             <li class="form__item">
-              <input class="form__checkbox" type="checkbox" name="hotel" id="hotel">
+              <input class="form__checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
               <label class="form__label form__label--dark" for="hotel">Разгромил отель</label>
             </li>
           </ul>
         </fieldset>
 
+        <!-- Контакты -->
         <fieldset class="form__fieldset">
           <ul class="form__list">
             <li class="form__item">
@@ -116,8 +127,11 @@
           </ul>
         </fieldset>
 
+        <!-- Приложения -->
         <fieldset class="form__fieldset form__fieldset--gray">
-          <legend class="form__title form__title--gray">С каким приложением путешествовали?</legend>
+          <div class="form__title">
+            <legend>С каким приложением путешествовали?</legend>
+          </div>
           <ul class="form__list">
             <li class="form__item">
               <input class="form__radio" type="radio" name="app" id="ios" value="ios" checked>
@@ -134,8 +148,11 @@
           </ul>
         </fieldset>
 
+        <!-- Эмоции -->
         <fieldset class="form__fieldset">
-          <legend class="form__title">Опишите свои эмоции</legend>
+          <div class="form__title form__title--last">
+            <legend>Опишите свои эмоции</legend>
+          </div>
           <ul class="form__list">
             <li class="form__item">
               <textarea class="form__text" rows="5" name="emotion" id="emotion"

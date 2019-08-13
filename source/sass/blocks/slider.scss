@@ -1,17 +1,23 @@
-.tables {
+.slider__list {
   @include reset;
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
+
+  padding-bottom: 40px;
 }
 
-.slider__item {
-  display: none;
+.slider__list--scroll {
+  overflow: hidden;
 }
 
-.slider__item--active {
-  display: inline-block;
-}
+// .slider__item {
+//   display: none;
+// }
+
+// .slider__item--active {
+//   display: inline-block;
+// }
 
 .slider__toggles {
   @include reset;
