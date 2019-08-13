@@ -6,15 +6,15 @@
 
 .form__fieldset {
   @include reset;
+  @include container;
+  margin-left: (-$mobile-paddings);
+  margin-right: (-$mobile-paddings);
+  margin-bottom: 25px;
 
   border: 0;
 }
 
 .form__fieldset--gray {
-  @include container;
-  margin-left: (-$mobile-paddings);
-  margin-right: (-$mobile-paddings);
-
   background-color: $background-gray;
 }
 
@@ -31,14 +31,19 @@
 .form__title {
   @include reset;
   @include section-paddings;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 
   text-transform: uppercase;
 
   line-height: 18px;
 
   color: $dark-pink;
+}
+
+.form__title--last {
+  padding-top: $mobile-paddings;
+  padding-bottom: $mobile-paddings;
 }
 
 .form__label {
@@ -51,6 +56,10 @@
 }
 
 .form__label--dark {
+  @include reset;
+
+  position: relative;
+
   color: $dark-blue;
 }
 
@@ -72,6 +81,14 @@
 
 .form__submit {
   padding-bottom: 30px;
+}
+
+.form__svg {
+  position: absolute;
+  display: block;
+  top: 5px;
+  left: 9px;
+  fill: $dark-pink;
 }
 
 // .form__radio {
