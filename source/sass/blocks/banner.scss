@@ -44,11 +44,9 @@
   .banner__image::after {
     content: url("../img/iphone-hand-tablet@1x.png");
 
-    display: flex;
-
     left: 0;
     bottom: 0;
 
-    z-index: 0;
+    z-index: 1;
   }
 }
