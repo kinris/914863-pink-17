@@ -6,3 +6,19 @@
 .page-title--white {
   color: $white;
 }
+
+.page-title--index {
+  color: $white;
+  padding-bottom: 310px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title--index {
+    width: 50%;
+    padding-bottom: 40px;
+
+    font-size: 40px;
+
+    color: $white;
+  }
+}

@@ -1,15 +1,28 @@
 .download {
-  padding-top: 28px;
-  padding-bottom: 30px;
+  padding-top: 30px;
   padding-left: $mobile-paddings;
   padding-right: $mobile-paddings;
+  margin-left: -($mobile-paddings);
+  margin-right: -($mobile-paddings);
 
   background-color: $dark-blue;
 
   color: $white;
 }
 
-// .download__wrapper {}
+@media (min-width: $tablet-width) {
+  .download {
+    width: 50%;
+    background-color: transparent;
+
+    position: relative;
+
+    z-index: 1;
+  }
+}
+
+// @media (min-width: $desktop-width) {}
+
 
 .download__links {
   display: flex;

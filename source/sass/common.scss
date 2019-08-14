@@ -1,6 +1,8 @@
 body {
   @include reset;
   @include font-base;
+
+  min-width: 320px;
 }
 
 .visually-hidden:not(:focus):not(:active),

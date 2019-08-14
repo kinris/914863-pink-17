@@ -1,17 +1,54 @@
 .banner {
-  min-height: 170px;
+  @include reset;
+
   padding-left: $mobile-paddings;
   padding-right: $mobile-paddings;
   padding-top: 30px;
+  padding-bottom: 30px;
   align-items: center;
 
-  background-color: $dark-blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  background-color: $dark-blue;
+
+  position: relative;
 }
 
-.banner__image {
-  display: block;
-  margin-top: 30px;
-  margin-left: (-$mobile-paddings);
+@media (min-width: $tablet-width) {
+  .banner {
+    padding-top: 95px;
+    padding-bottom: 110px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    position: relative;
+  }
+}
+
+.banner__image::after {
+  content: url("../img/iphone-hand-mobile@1x.png");
+
+  position: absolute;
+  left: 0;
+  bottom: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .banner__image::after {
+    content: url("../img/iphone-hand-tablet@1x.png");
+
+    display: flex;
+
+    left: 0;
+    bottom: 0;
+
+    z-index: 0;
+  }
 }
