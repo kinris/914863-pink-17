@@ -34,12 +34,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .contacts__header {
-    width: 730px;
-  }
-}
-
 .contacts__title {
   @include reset;
 }
