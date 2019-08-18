@@ -1,5 +1,6 @@
 .photos-list {
   @include reset;
+  list-style: $list-style;
 }
 
 .photos-list__item {

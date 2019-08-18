@@ -1,9 +1,6 @@
 .download {
+  @include section-paddings;
   padding-top: 30px;
-  padding-left: $mobile-paddings;
-  padding-right: $mobile-paddings;
-  margin-left: -($mobile-paddings);
-  margin-right: -($mobile-paddings);
 
   background-color: $dark-blue;
 
@@ -12,7 +9,8 @@
 
 @media (min-width: $tablet-width) {
   .download {
-    width: 50%;
+    @include reset;
+
     background-color: transparent;
 
     position: relative;
@@ -21,20 +19,34 @@
   }
 }
 
-// @media (min-width: $desktop-width) {}
-
-
 .download__links {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-top: 28px;
-  padding-left: 37px;
-  padding-right: 37px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .download__links {
+    padding-top: 66px;
+    padding-bottom: 35px;
+  }
 }
 
 .download__link {
-  padding-left: 20px;
-  padding-right: 20px;
+  @include section-paddings;
+}
+
+.download__text {
+  @include reset;
+  @include section-paddings;
+}
+
+@media (min-width: $tablet-width) {
+  .download__text {
+    @include reset;
+    font-size: 18px;
+  }
 }

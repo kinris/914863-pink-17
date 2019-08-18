@@ -1,5 +1,30 @@
 .price {
-  background-color: $background-gray;
+  @include reset;
   padding-top: 63px;
-  padding-bottom: 47px;
+  padding-bottom: 48px;
+
+  background-color: $background-gray;
+}
+
+.price__tables {
+  @include reset;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+@media (min-width: $tablet-width) {
+  .price__tables {
+    width: 620px;
+
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__tables {
+    width: 940px;
+  }
 }

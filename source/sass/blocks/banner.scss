@@ -1,52 +1,77 @@
 .banner {
   @include reset;
-
-  padding-left: $mobile-paddings;
-  padding-right: $mobile-paddings;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  align-items: center;
-
+  margin-bottom: 30px;
+  min-height: 170px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
 
   background-color: $dark-blue;
-
-  position: relative;
 }
 
 @media (min-width: $tablet-width) {
   .banner {
-    padding-top: 95px;
-    padding-bottom: 110px;
-
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position-x: center;
+    background-position-y: bottom;
   }
 }
 
 @media (min-width: $desktop-width) {
   .banner {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-
-    position: relative;
   }
 }
 
-.banner__image::after {
-  content: url("../img/iphone-hand-mobile@1x.png");
+.banner__wrapper {
+  @include reset;
+  width: 320px;
+  margin: 0 auto;
 
-  position: absolute;
-  left: 0;
-  bottom: 280px;
+  padding-bottom: 30px;
+
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position-x: -10px;
+  background-position-y: 175px;
 }
 
 @media (min-width: $tablet-width) {
-  .banner__image::after {
-    content: url("../img/iphone-hand-tablet@1x.png");
+  .banner__wrapper {
+    @include reset;
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
-    left: 0;
-    bottom: 0;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position-x: -40px;
+    background-position-y: 75px;
+  }
+}
 
-    z-index: 1;
+@media (min-width: $desktop-width) {
+  .banner__wrapper {
+    @include reset;
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 120px;
+
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .banner__inner {
+    @include reset;
+    width: 300px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .banner__image {
+    display: none;
   }
 }

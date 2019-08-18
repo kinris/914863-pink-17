@@ -1,28 +1,43 @@
 .page-title {
   @include reset;
   @include page-title;
+  @include section-paddings;
 }
 
 .page-title--white {
+  @include section-paddings;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   color: $white;
 }
 
 .page-title--index {
+  @include reset;
+  @include section-paddings;
+  padding-top: 90px;
+  padding-bottom: 315px;
+
   color: $white;
-  padding-bottom: 310px;
 }
 
 @media (min-width: $tablet-width) {
   .page-title--index {
-    width: 50%;
-    padding-bottom: 40px;
+    @include reset;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 35px;
 
     font-size: 40px;
+    line-height: 48px;
+  }
+}
 
-    color: $white;
-
-    position: relative;
-
-    z-index: 2;
+@media (min-width: $desktop-width) {
+  .page-title--index {
+    @include reset;
+    font-size: 50px;
+    line-height: 60px;
+    padding-bottom: 50px;
   }
 }

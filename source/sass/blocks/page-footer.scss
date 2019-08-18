@@ -1,9 +1,26 @@
 .page-footer {
-  @include container;
-  margin-bottom: 40px;
+  display: none;
 }
+
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }

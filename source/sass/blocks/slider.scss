@@ -1,28 +1,43 @@
+@media (min-width: $desktop-width) {
+  .slider {
+    margin: 0 auto;
+    width: 940px;
+  }
+}
+
 .slider__list {
   @include reset;
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-
   padding-bottom: 40px;
+
+  list-style: $list-style;
+}
+
+.slider__item--hidden {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__item--hidden {
+    display: block;
+  }
 }
 
 .slider__list--scroll {
   overflow: hidden;
 }
 
-// .slider__item {
-//   display: none;
-// }
-
-// .slider__item--active {
-//   display: inline-block;
-// }
-
+// ------------------------------
+// ------------------------------
 .slider__toggles {
   @include reset;
 
   line-height: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggles--prises {
+    display: none;
+  }
 }
 
 .slider__toggle {
@@ -38,4 +53,44 @@
 .slider__toggle--active {
   background: $white;
   border: 3px solid $dark-blue;
+}
+
+@media (min-width: $desktop-width) {
+  .slider__toggles--reviews {
+    display: none;
+  }
+}
+
+.slider__toggles--desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .slider__toggles--desktop {
+    display: block;
+  }
+
+  .slider__arrow {
+    position: absolute;
+    top: 210px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+  }
+
+  .slider__arrow-next {
+    right: $desktop-paddings;
+    transform: rotate(45deg);
+    border-top: 2px solid $arrows-gray;
+    border-right: 2px solid $arrows-gray;
+  }
+
+  .slider__arrow-prev {
+    left: $desktop-paddings;
+    transform: rotate(45deg);
+    border-bottom: 2px solid $arrows-gray;
+    border-left: 2px solid $arrows-gray;
+  }
 }

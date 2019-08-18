@@ -5,17 +5,52 @@
   position: relative;
 }
 
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
 .main-nav__logo-image {
   display: block;
-  padding-top: 22px;
-  padding-bottom: 25px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-top: $mobile-paddings;
+  padding-bottom: $mobile-paddings;
+
+  background: url("../img/logo-pink-white-mobile.svg");
+  width: 150px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__logo-image {
+    background: url("../img/logo-pink-white-tablet.svg");
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__logo-image {
+    background: url("../img/logo-pink-white-desktop.svg");
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
 }
 
 .main-nav__list {
+  @include reset;
   margin-left: (-$mobile-paddings);
   margin-right: (-$mobile-paddings);
+
+  list-style: $list-style;
 }
 
 .main-nav__toggle {
@@ -47,4 +82,10 @@
 
   background-image: url("../img/icon-menu-cross.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
