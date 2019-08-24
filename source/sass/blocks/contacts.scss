@@ -74,6 +74,12 @@
   }
 }
 
+.contacts__item--write {
+  @media (min-width: $desktop-width) {
+order: 1;
+  }
+}
+
 .contacts__text {
   @include reset;
 
