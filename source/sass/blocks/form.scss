@@ -1,25 +1,92 @@
 .form {
-  @include reset;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 
-  background-color: $white;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .form__fieldset {
   @include reset;
-  @include container;
-  margin-left: (-$mobile-paddings);
-  margin-right: (-$mobile-paddings);
+
   margin-bottom: 25px;
 
   border: 0;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    margin-bottom: 65px;
+
+    border: 1px solid $light-gray;
+  }
 }
 
 .form__fieldset--gray {
   background-color: $background-gray;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+}
+
+.form__fieldset--name {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
+  }
+}
+
+.form__fieldset--achievement {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.form__fieldset--contacts {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.form__fieldset--add {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
+  }
+}
+
+.form__fieldset--emotions {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .form__list {
   @include reset;
+  @include section-paddings;
 
   text-align: left;
 
@@ -81,8 +148,24 @@
   border-radius: 3px;
 }
 
-.form__submit {
-  padding-bottom: 30px;
+.form__button {
+  @include section-paddings;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    order: 6;
+  }
+}
+
+.form__button--form {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .form__svg {

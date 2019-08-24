@@ -1,16 +1,5 @@
-.social {
-  @include reset;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  margin-bottom: 39px;
-
-  list-style: $list-style;
-}
-
 .social__item {
-  @include reset;
+  // @include reset;
   display: flex;
   justify-content: center;
   align-items: center;

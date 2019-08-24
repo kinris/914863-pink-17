@@ -3,16 +3,12 @@
   border-spacing: 0 2px;
 
   border: 1px solid $background-gray;
-}
 
-@media (min-width: $tablet-width) {
-  .price-table {
+  @media (min-width: $tablet-width) {
     width: 155px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .price-table {
+  @media (min-width: $desktop-width) {
     width: 235px;
   }
 }
@@ -58,6 +54,10 @@
   background-repeat: no-repeat;
   background-position-x: 230px;
   background-position-y: center;
+
+  @media (min-width: $tablet-width) {
+    background-position-x: center;
+  }
 }
 
 .price-table__item--no {
@@ -65,16 +65,8 @@
   background-repeat: no-repeat;
   background-position-x: 230px;
   background-position-y: center;
-}
 
-@media (min-width: $tablet-width) {
-  .price-table__item--yes {
-    background-position-x: center;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .price-table__item--no {
+  @media (min-width: $tablet-width) {
     background-position-x: center;
   }
 }
@@ -83,17 +75,15 @@
   .price-table__tariff {
     display: none;
   }
-
-  .price-table__tariff--tablet {
-    @include reset;
-    display: block;
-    text-transform: none;
-    line-height: 30px;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .price-table__tariff--tablet {
+    @include reset;
+    display: block;
+
+    text-transform: none;
+
     font-size: 18px;
     line-height: 30px;
   }

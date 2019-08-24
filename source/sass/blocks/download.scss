@@ -5,10 +5,8 @@
   background-color: $dark-blue;
 
   color: $white;
-}
 
-@media (min-width: $tablet-width) {
-  .download {
+  @media (min-width: $tablet-width) {
     @include reset;
 
     background-color: transparent;
@@ -26,10 +24,8 @@
 
   padding-top: 30px;
   padding-bottom: 20px;
-}
 
-@media (min-width: $desktop-width) {
-  .download__links {
+  @media (min-width: $desktop-width) {
     padding-top: 66px;
     padding-bottom: 35px;
   }
@@ -41,11 +37,8 @@
 
 .download__text {
   @include reset;
-  @include section-paddings;
-}
 
-@media (min-width: $tablet-width) {
-  .download__text {
+  @media (min-width: $tablet-width) {
     @include reset;
     font-size: 18px;
   }

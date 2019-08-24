@@ -13,18 +13,14 @@
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
-}
 
-@media (min-width: $tablet-width) {
-  .price__tables {
+  @media (min-width: $tablet-width) {
     width: 620px;
 
     align-items: flex-end;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .price__tables {
+  @media (min-width: $desktop-width) {
     width: 940px;
   }
 }
