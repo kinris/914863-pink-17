@@ -1,9 +1,38 @@
 .price {
   @include reset;
-  padding-top: 63px;
+  padding-top: 90px;
   padding-bottom: 48px;
 
+  position: relative;
+
   background-color: $background-gray;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 140px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    padding-top: 32px;
+
+    background: linear-gradient(to left top, transparent 50%, #ffffff 50%) right / 100.025% 100.025% no-repeat;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 90px;
+    }
+  }
 }
 
 .price__tables {

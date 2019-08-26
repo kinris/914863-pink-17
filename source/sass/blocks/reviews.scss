@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop-width) {
     @include reset;
-    padding-bottom: 80px;
+
     width: auto;
   }
 }
@@ -52,8 +52,6 @@
   }
 }
 
-// ----------------------------
-// ----------------------------
 .reviews__list {
   @media (min-width: $tablet-width) {
     @include reset;
@@ -88,7 +86,7 @@
 }
 
 .reviews__people {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column-reverse;
   }

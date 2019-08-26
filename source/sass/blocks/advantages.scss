@@ -8,6 +8,7 @@
   @media (min-width: $tablet-width) {
     @include reset;
     margin: 0 auto;
+    padding-bottom: 50px;
     width: 620px;
   }
 
@@ -15,11 +16,12 @@
     @include reset;
     margin: 0 auto;
     width: 820px;
+    padding-bottom: 75px;
   }
 }
 
 .advantages__title {
-  padding-bottom: 38px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     @include reset;
@@ -36,49 +38,67 @@
   }
 }
 
-.advantages__title--last {
+.advantages__title--desktop {
   @media (min-width: $tablet-width) {
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 75px;
   }
 }
 
 .advantages__wrapper {
   @include reset;
   @include section-paddings;
-  padding-top: 52px;
+
+  position: relative;
 
   background-color: $background-gray;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
-
-    padding-top: 52px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: center;
+  }
 
-    padding-top: 52px;
+  &::before {
+    content: "";
+    position: absolute;
+
+    padding-top: 32px;
+
+    background: linear-gradient(to left top, transparent 50%, #ffffff 50%) right / 100.025% 100.025% no-repeat;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 90px;
+    }
   }
 }
 
 .advantages__list {
   @include reset;
+  padding-top: 80px;
 
   list-style: $list-style;
 
+  z-index: 1;
+
   @media (min-width: $tablet-width) {
     @include reset;
+    padding-top: 70px;
+
     width: 310px;
     order: 2;
 
@@ -86,6 +106,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include reset;
+
     width: 940px;
     display: flex;
     justify-content: space-between;
@@ -135,6 +157,8 @@
   width: 157px;
   height: 320px;
   background-repeat: no-repeat;
+
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     @include reset;
