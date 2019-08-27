@@ -1,6 +1,8 @@
 body {
   @include reset;
   @include font-base;
+
+  min-width: 320px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -19,9 +21,4 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-ul {
-  @include reset;
-  list-style: $list-style;
 }

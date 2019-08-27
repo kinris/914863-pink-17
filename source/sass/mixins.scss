@@ -1,4 +1,4 @@
-@mixin reset {
+@mixin reset () {
   margin: 0;
   padding: 0;
 }
@@ -25,19 +25,34 @@
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
+  line-height: 28px;
 
   text-align: center;
-  line-height: 1em;
 }
 
-@mixin container {
-  margin: 0 auto;
-  box-sizing: border-box;
-
+@mixin container () {
+  @include reset;
   @include section-paddings;
+  margin: 0 auto;
 
-  @media (min-width: 960px) {
-    padding-left: 10px;
-    padding-right: 10px;
+  box-sizing: border-box;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    .container {
+      width: 660px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .container {
+      width: 960px;
+      padding-left: $desktop-paddings;
+      padding-right: $desktop-paddings;
+    }
   }
 }
+
+// @media (min-width: $tablet-width) {}
+
+// @media (min-width: $desktop-width) {}

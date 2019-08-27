@@ -1,4 +1,12 @@
-.site-list__item a {
+.site-list {
+  @media (min-width: $desktop-width) {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.site-list__link {
   display: block;
 
   padding-top: 16px;
@@ -11,17 +19,19 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  background-color: $dark-blue;
   border-top: 1px solid $black;
   border-bottom: 1px solid $light-blue;
-}
 
-.site-list a[href] {
   &:hover {
     color: $dark-pink;
   }
 
   &:active {
     color: $superdark-pink;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    border: 0;
   }
 }

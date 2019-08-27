@@ -1,7 +1,113 @@
 .reviews {
+  @include reset;
+  margin: 0 auto;
+
   @include section-paddings;
   padding-top: 44px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include reset;
+
+    width: auto;
+  }
+}
+
+.reviews__effect {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    padding-bottom: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 940px;
+
+    justify-content: space-between;
+  }
+}
+
+.reviews__image {
+  @media (min-width: $tablet-width) {
+    @include reset;
+    padding-right: 71px;
+
+    fill: $timer-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+    width: 303px;
+    height: 345px;
+  }
+}
+
+.reviews__list {
+  @media (min-width: $tablet-width) {
+    @include reset;
+    width: 310px;
+
+    text-align: left;
+
+    list-style: $list-style;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.reviews__title {
+  @media (min-width: $tablet-width) {
+    @include reset;
+
+    padding-bottom: $mobile-paddings;
+    padding-right: 130px;
+
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    line-height: 30px;
+  }
+}
+
+.reviews__people {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include reset;
+    padding-left: 120px;
+    padding-right: 120px;
+
+    position: relative;
+  }
+}
+
+.reviews__about {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    display: block;
+    line-height: 30px;
+  }
 }
 
 .reviews__name {
@@ -13,10 +119,57 @@
   line-height: 30px;
 
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    padding-bottom: 5px;
+
+    font-size: 20px;
+  }
 }
 
 .reviews__text {
   @include reset;
-  line-height: 30px;
-  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: $mobile-paddings;
+
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 30px;
+    font-size: 18px;
+  }
+}
+
+.reviews__text--link {
+  @media (min-width: $tablet-width) {
+    color: $dark-pink;
+  }
+}
+
+.reviews__wrapper {
+  @media (min-width: $desktop-width) {
+    @include reset;
+
+    background-color: $background-gray;
+  }
+}
+
+.reviews__svg {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    @include reset;
+    margin: 0 auto;
+    padding-top: 72px;
+    padding-bottom: 50px;
+    width: 79px;
+    height: 63px;
+
+    fill: $quotes-gray;
+  }
 }

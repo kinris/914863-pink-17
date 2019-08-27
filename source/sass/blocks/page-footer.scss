@@ -1,9 +1,64 @@
 .page-footer {
-  @include container;
+  margin-top: 64px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 86px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+
+.page-footer__wrapper {
+  @include reset;
+  margin: 0 auto;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.page-footer--mobile-hidden {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 40px;
+
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+  }
+}
+
+.page-footer__social {
+  @include reset;
+  padding-bottom: 40px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  list-style: $list-style;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+  }
 }

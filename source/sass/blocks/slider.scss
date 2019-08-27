@@ -1,22 +1,39 @@
-.tables {
+.slider {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 940px;
+  }
+}
+
+.slider__list {
   @include reset;
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
+  padding-bottom: 40px;
+
+  list-style: $list-style;
 }
 
-.slider__item {
+.slider__item--mobile-hidden {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
-.slider__item--active {
-  display: inline-block;
+.slider__list--scroll {
+  overflow: hidden;
 }
 
 .slider__toggles {
   @include reset;
 
   line-height: 0;
+}
+
+.slider__toggles--prices {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .slider__toggle {
@@ -32,4 +49,47 @@
 .slider__toggle--active {
   background: $white;
   border: 3px solid $dark-blue;
+}
+
+.slider__toggles--reviews {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.slider__arrows {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    @include reset;
+    display: block;
+
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__arrow {
+    position: absolute;
+    bottom: 160px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+  }
+
+  .slider__arrow--next {
+    right: $desktop-paddings;
+    transform: rotate(45deg);
+    border-top: 2px solid $arrows-gray;
+    border-right: 2px solid $arrows-gray;
+  }
+
+  .slider__arrow--prev {
+    left: $desktop-paddings;
+    transform: rotate(45deg);
+    border-bottom: 2px solid $arrows-gray;
+    border-left: 2px solid $arrows-gray;
+  }
 }

@@ -1,40 +1,115 @@
 .photo-editor {
   @include reset;
-  @include container;
-  margin-bottom: 40px;
+  @include section-paddings;
   padding-top: $mobile-paddings;
+  margin: 0 auto;
+
 
   background-color: $background-gray;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 57px;
+    padding-left: $mobile-paddings;
+    padding-right: $mobile-paddings;
+
+    max-width: 620px;
+
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    padding-left: 80px;
+    padding-right: 60px;
+  }
 }
 
-// .photo-editor__togls {}
+.photo-editor__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+  }
+}
 
 .photo-editor__image {
-  width: 100%;
   padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+  }
+}
+
+.photo-editor__toggls {
+  @media (min-width: $tablet-width) {
+    @include reset;
+  }
+}
+
+.photo-editor__toggls-wrapper {
+  margin-left: (-$mobile-paddings);
+  margin-right: (-$mobile-paddings);
+
+  border-bottom: 1px solid $medium-gray;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    border: 0;
+  }
 }
 
 .photo-editor__effects {
   @include reset;
-  @include container;
+  padding-bottom: 75px;
+  margin: 0 auto;
+
+  width: 280px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-left: (-$mobile-paddings);
-  margin-right: (-$mobile-paddings);
-  padding-bottom: 75px;
 
-  border-bottom: 1px solid $medium-gray;
+  list-style: $list-style;
 
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    padding-bottom: 60px;
+
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+  }
 }
 
 .photo-editor__effect {
   @include reset;
   padding-left: $mobile-paddings;
   padding-right: $mobile-paddings;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    width: 275px;
+    height: 72px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid $medium-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+  }
 }
 
 .photo-editor__effect:checked {
@@ -45,23 +120,33 @@
   @include reset;
   display: none;
   position: absolute;
-  left: 40px;
+  right: 20px;
   bottom: 30px;
 
   width: 240px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: static;
+
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 294px;
+  }
 }
 
 input:checked ~ .photo-editor__range {
   display: block;
 }
 
-.photo-editor__bottom {
-  @include container;
+.photo-editor__svg {
+  fill: $gray;
+}
 
-  margin-left: (-$mobile-paddings);
-  margin-right: (-$mobile-paddings);
-
-  background-color: $background-gray;
+.photo-editor__svg--active {
+  fill: $dark-pink;
 }
 
 .photo-editor__buttons {
@@ -71,10 +156,35 @@ input:checked ~ .photo-editor__range {
 
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    margin: 0 auto;
+    padding-bottom: 60px;
+
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include reset;
+    width: 410px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.photo-editor__button {
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
 }
 
 .photo-editor__button:first-child {
   margin-bottom: 12px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .photo-editor__on {
