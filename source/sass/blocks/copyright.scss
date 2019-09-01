@@ -1,5 +1,10 @@
 .copyright {
   @include reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .copyright__text {
@@ -9,4 +14,8 @@
 .copyright__link {
   vertical-align: middle;
   display: inline-block;
+}
+
+.copyright__image {
+  display: block;
 }

@@ -52,164 +52,157 @@
       </div>
     </div>
 
-    <p class="page-main__text">
-      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+    <p class="page-main__text container">
+      Поделитесь своей историей и получите шанс выиграть ценный&nbsp;приз&nbsp;—&nbsp;1000 миль на
+      вашу&nbsp;бонусную&nbsp;карту!
       <span class="page-main__text page-main__text--mobile-hidden">
-        Пожалуйста, заполните форму ниже:
+        Пожалуйста,&nbsp;заполните&nbsp;форму&nbsp;ниже:
       </span>
     </p>
 
-    <section class="forms">
+    <form class="form container" action="#" method="POST">
+      <!-- ФИО -->
+      <fieldset class="form__fieldset form__fieldset--name">
+        <ul class="form__list form__list--name">
 
-      <form class="form" action="#" method="POST">
-        <!-- ФИО -->
-        <fieldset class="form__fieldset form__fieldset--name">
-          <ul class="form__list form__list--name">
+          <li class="form__item form__item--name">
+            <label class="form__label" for="surname">Фамилия:</label>
+            <input class="form__input form__text" type="text" name="surname" id="surname"
+              placeholder="Укажите фамилию *" required>
+          </li>
 
-            <li class="form__item form__item--name">
-              <label class="form__label" for="surname">Фамилия:</label>
-              <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *"
-                required>
-            </li>
+          <li class="form__item form__item--name">
+            <label class="form__label" for="name">Имя:</label>
+            <input class="form__input form__text" type="text" name="name" id="name" placeholder="Введите ваше имя *"
+              required>
+          </li>
 
-            <li class="form__item form__item--name">
-              <label class="form__label" for="name">Имя:</label>
-              <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
-            </li>
+          <li class="form__item form__item--name">
+            <label class="form__label" for="last-name">Отчество:</label>
+            <input class="form__input form__text" type="text" name="last-name" id="last-name"
+              placeholder="Ну и отчество тоже">
+          </li>
 
-            <li class="form__item form__item--name">
-              <label class="form__label" for="last-name">Отчество:</label>
-              <input class="form__input" type="text" name="last-name" id="last-name" placeholder="Ну и отчество тоже">
-            </li>
+        </ul>
+      </fieldset>
 
-          </ul>
-        </fieldset>
+      <!-- Достижения -->
+      <fieldset class="form__fieldset form__fieldset--achievement form__fieldset--gray">
 
-        <!-- Достижения -->
-        <fieldset class="form__fieldset form__fieldset--achievement form__fieldset--gray">
+        <div class="form__title form__title--style-2">Ваши безбашенные достижения&nbsp;в&nbsp;путешествии</div>
 
-          <legend class="form__legend">
-            <span class="form__title">Ваши безбашенные достижения в путешествии</span>
-          </legend>
+        <ul class="form__list form__list--checkboxes">
 
-          <ul class="form__list">
+          <li class="form__item form__item--style-2">
+            <input class="form__checkbox" type="checkbox" name="selfi" id="selfi" checked>
+            <label class=" form__text form__text--checkbox" for="selfi">Сделал селфи с акулой</label>
+          </li>
 
-            <li class="form__item">
-              <input class="form__checkbox" type="checkbox" name="selfi" id="selfi" checked>
-              <label class="form__label" for="selfi">Сделал селфи с акулой</label>
-            </li>
+          <li class="form__item form__item--style-2">
+            <input class="form__checkbox" type="checkbox" name="beach" id="beach" checked>
+            <label class=" form__text form__text--checkbox" for="beach">Обгорел на пляже</label>
+          </li>
 
-            <li class="form__item">
-              <input class="form__checkbox" type="checkbox" name="beach" id="beach" checked>
-              <label class="form__label" for="beach">Обгорел на пляже</label>
-            </li>
+          <li class="form__item form__item--style-2">
+            <input class="form__checkbox" type="checkbox" name="norris" id="norris">
+            <label class=" form__text form__text--checkbox" for="norris">Видел Чака Норриса</label>
+          </li>
 
-            <li class="form__item">
-              <input class="form__checkbox" type="checkbox" name="norris" id="norris">
-              <label class="form__label" for="norris">Видел Чака Норриса</label>
-            </li>
+          <li class="form__item form__item--style-2">
+            <input class="form__checkbox" type="checkbox" name="souvenir" id="souvenir">
+            <label class=" form__text form__text--checkbox" for="souvenir">Накупил сувениров</label>
+          </li>
 
-            <li class="form__item">
-              <input class="form__checkbox" type="checkbox" name="souvenir" id="souvenir">
-              <label class="form__label" for="souvenir">Накупил сувениров</label>
-            </li>
+          <li class="form__item form__item--style-2">
+            <input class="form__checkbox" type="checkbox" name="tower" id="tower" checked>
+            <label class=" form__text form__text--checkbox" for="tower">Удержал башню</label>
+          </li>
 
-            <li class="form__item">
-              <input class="form__checkbox" type="checkbox" name="tower" id="tower" checked>
-              <label class="form__label" for="tower">Удержал башню</label>
-            </li>
+          <li class="form__item form__item--style-2">
+            <input class="form__checkbox" type="checkbox" name="hotel" id="hotel">
+            <label class=" form__text form__text--checkbox" for="hotel">Разгромил отель</label>
+          </li>
+        </ul>
+      </fieldset>
 
-            <li class="form__item">
-              <input class="form__checkbox" type="checkbox" name="hotel" id="hotel">
-              <label class="form__label" for="hotel">Разгромил отель</label>
-            </li>
-          </ul>
-        </fieldset>
+      <!-- Контакты visually-hidden  -->
+      <fieldset class="form__fieldset form__fieldset--contacts">
 
-        <!-- Контакты visually-hidden  -->
-        <fieldset class="form__fieldset form__fieldset--contacts">
+        <div class="form__title form__title--contacts">Контактная информация</div>
 
-          <legend class="form__legend form__legend--contacts">
-            <span class="form__title">Контактная информация</span>
-          </legend>
+        <ul class="form__list form__list--contacts">
+          <li class="form__item form__item--contacts">
+            <label class="form__label form__label--contacts">Номер телефона</label>
+            <input class="form__input form__text" type="tel" name="phone-number" id="phone-number"
+              pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
+            <div class="form__input-icon form__input-icon--phone"></div>
+          </li>
+          <li class="form__item form__item--contacts">
+            <label class="form__label form__label--contacts" for="email">Адрес почты</label>
+            <input class="form__input form__text" type="email" name="email" id="email"
+              pattern="/^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i" placeholder="Введите почту *" required>
+            <div class="form__input-icon form__input-icon--mail"></div>
+          </li>
+        </ul>
+      </fieldset>
 
-          <ul class="form__list">
-            <li class="form__item">
-              <label class="form__label">Номер телефона</label>
-              <input class="form__input" type="tel" name="phone-number" id="phone-number"
-                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
-            </li>
-            <li class="form__item">
-              <label class="form__label" for="email">Адрес почты</label>
-              <input class="form__input" type="email" name="email" id="email"
-                pattern="/^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i" placeholder="Введите почту *" required>
-            </li>
-          </ul>
-        </fieldset>
+      <!-- Приложения -->
+      <fieldset class="form__fieldset form__fieldset--platform form__fieldset--gray">
 
-        <!-- Приложения -->
-        <fieldset class="form__fieldset form__fieldset--add form__fieldset--gray">
+        <div class="form__title form__title--style-2">С каким приложением путешествовали?</div>
 
-          <legend class="form__legend">
-            <span class="form__title">С каким приложением путешествовали?</span>
-          </legend>
+        <ul class="form__list">
+          <li class="form__item form__item--style-2">
+            <input class="form__radio" type="radio" name="platform" id="ios" value="ios" checked>
+            <label class=" form__text  form__text--radio" for="ios">Pink для iOS</label>
+          </li>
 
-          <ul class="form__list">
-            <li class="form__item">
-              <input class="form__radio" type="radio" name="app" id="ios" value="ios" checked>
-              <label class="form__label form__label--radio" for="ios">Pink для iOS</label>
-            </li>
+          <li class="form__item form__item--style-2">
+            <input class="form__radio" type="radio" name="platform" id="android" value="android">
+            <label class=" form__text  form__text--radio" for="android">Pink на Android</label>
+          </li>
 
-            <li class="form__item">
-              <input class="form__radio" type="radio" name="app" id="android" value="android">
-              <label class="form__label form__label--radio" for="android">Pink на Android</label>
-            </li>
+          <li class="form__item form__item--style-2">
+            <input class="form__radio" type="radio" name="platform" id="windows-phone" value="windows-phone">
+            <label class=" form__text  form__text--radio" for="windows-phone">Windows Phone</label>
+          </li>
+        </ul>
 
-            <li class="form__item">
-              <input class="form__radio" type="radio" name="app" id="windows-phone" value="windows-phone">
-              <label class="form__label form__label--radio" for="windows-phone">Windows Phone</label>
-            </li>
-          </ul>
+      </fieldset>
 
-        </fieldset>
+      <!-- Эмоции -->
+      <fieldset class="form__fieldset form__fieldset--emotions">
 
-        <!-- Эмоции -->
-        <fieldset class="form__fieldset form__fieldset--emotions">
+        <div class="form__title">Опишите свои эмоции</div>
 
-          <legend class="form__legend form__legend--emotions">
-            <span class="form__title">Опишите свои эмоции</span>
-          </legend>
+        <ul class="form__list">
+          <li class="form__item">
+            <textarea class="form__input form__textarea form__text" rows="5" name="emotion" id="emotion"
+              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </li>
+        </ul>
+      </fieldset>
 
-          <ul class="form__list">
-            <li class="form__item">
-              <textarea class="form__input" rows="5" name="emotion" id="emotion"
-                placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </li>
-          </ul>
-        </fieldset>
+      <!-- Кнопка -->
+      <div class="form__footer">
+        <button class="button button--green button--form" type="button">Отправить форму</button>
+        <p class="form__text-footer">
+          <span class="form__text-footer form__text-footer--red">*</span>&nbsp;-&nbsp;Обязательные&nbsp;поля
+        </p>
+      </div>
 
-        <!-- Кнопка -->
-        <div class="form__button">
-          <button class="button button--green button--big form__button--form" type="button">Отправить форму</button>
-          <p class="page-main__text page-main__text--form">
-            <span class="page-main__text page-main__text--red">*</span> - Обязательные поля
-          </p>
-        </div>
+    </form>
 
-      </form>
-
-    </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo" href="index.html"><img src="img/logo-pink-blue-mobile.svg"
+      <a class="page-footer__logo" href="index.html"><img class="page-footer__image" src="img/logo-pink-blue-mobile.svg"
           alt="Логотип сервиса Pink"></a>
 
       <ul class="page-footer__social social">
         <li>
-          <a class="social__item" href="#">
-            <span class="visually-hidden">Мы в Твиттере</span>
+          <a class="social__item" title="Мы в Твиттере" href="#">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
               y="0px" width="19" height="15" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
               xml:space="preserve">
@@ -224,8 +217,7 @@
         </li>
 
         <li>
-          <a class="social__item" href="#">
-            <span class="visually-hidden">Мы на Фейсбуке</span>
+          <a class="social__item" title="Мы на Фейсбуке" href="#">
             <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="19"
               viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
@@ -236,8 +228,7 @@
         </li>
 
         <li>
-          <a class="social__item" href="#">
-            <span class="visually-hidden">Мы на Ютубе</span>
+          <a class="social__item" title="Мы на Ютубе" href="#">
             <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15" height="14"
               viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
@@ -250,8 +241,8 @@
 
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
-            Academy</span><img src="img/logo-htmlacademy.svg" width="24" height="37" alt="HTML Academy">
+        <a class="copyright__link" title="HTML Academy" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" src="img/logo-htmlacademy.svg" width="24" height="37" alt="HTML Academy">
         </a>
       </div>
     </div>

@@ -3,26 +3,20 @@
 }
 
 .page-main__text {
-  @include reset;
-  margin: 0 auto;
-  margin-bottom: 50px;
-
-  width: 280px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
-
-    width: 500px;
+    padding-top: 76px;
+    padding-bottom: 76px;
 
     font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
-
-    width: 820px;
+    font-size: 18px;
   }
 }
 
@@ -64,5 +58,6 @@
 }
 
 .page-main__text--red {
+  @include reset;
   color: $dark-pink;
 }

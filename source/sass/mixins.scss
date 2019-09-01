@@ -31,25 +31,16 @@
 }
 
 @mixin container () {
-  @include reset;
-  @include section-paddings;
   margin: 0 auto;
-
   box-sizing: border-box;
-  width: 320px;
 
-  @media (min-width: $tablet-width) {
-    .container {
-      width: 660px;
-    }
-  }
+  @include section-paddings;
+
+  max-width: 960px;
 
   @media (min-width: $desktop-width) {
-    .container {
-      width: 960px;
-      padding-left: $desktop-paddings;
-      padding-right: $desktop-paddings;
-    }
+    padding-left: $desktop-paddings;
+    padding-right: $desktop-paddings;
   }
 }
 
