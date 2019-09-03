@@ -1,7 +1,6 @@
 .main-nav__wrapper {
   @include reset;
   @include section-paddings;
-  position: relative;
 
   @media (min-width: $desktop-width) {
     @include reset;

@@ -38,16 +38,76 @@
 }
 
 .reviews__image {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     @include reset;
     padding-right: 71px;
+    width: 238px;
+    height: 276px;
 
     fill: $timer-gray;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 18px;
+      top: 54px;
+
+      border: 14px solid $dark-pink;
+      border-radius: 50%;
+      width: 202px;
+      height: 202px;
+
+      box-sizing: border-box;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      left: 67px;
+      top: 50%;
+
+      font-size: 96px;
+      font-weight: 700;
+      color: $dark-pink;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 60px;
-    width: 303px;
+    width: 298px;
+    height: 345px;
+
+    &::before {
+      content: "";
+      left: 23px;
+      top: 69px;
+
+      border-width: 17px;
+      width: 253px;
+      height: 253px;
+    }
+
+    &::after {
+      content: "24";
+      left: 84px;
+
+      font-size: 120px;
+    }
+  }
+}
+
+.reviews__svg-timer {
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+    width: 238px;
+    height: 276px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+    width: 298px;
     height: 345px;
   }
 }
@@ -87,6 +147,8 @@
 
 .reviews__people {
   @media (min-width: $tablet-width) {
+    padding-bottom: 30px;
+
     display: flex;
     flex-direction: column-reverse;
   }

@@ -1,7 +1,6 @@
 .page-title {
   @include reset;
   @include page-title;
-  @include section-paddings;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
@@ -11,7 +10,6 @@
 
 .page-title--index {
   @include reset;
-  @include section-paddings;
   padding-top: 90px;
   padding-bottom: 315px;
 
@@ -19,8 +17,6 @@
 
   @media (min-width: $tablet-width) {
     @include reset;
-    padding-left: 50px;
-    padding-right: 50px;
     padding-bottom: 35px;
 
     font-size: 40px;

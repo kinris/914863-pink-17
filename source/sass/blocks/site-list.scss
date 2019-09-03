@@ -1,4 +1,6 @@
 .site-list {
+  @include reset;
+
   @media (min-width: $desktop-width) {
     width: 620px;
     display: flex;
@@ -21,6 +23,7 @@
 
   border-top: 1px solid $black;
   border-bottom: 1px solid $light-blue;
+  position: relative;
 
   &:hover {
     color: $dark-pink;
@@ -33,5 +36,17 @@
   @media (min-width: $desktop-width) {
 
     border: 0;
+  }
+}
+
+.site-list__link:not([href])::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 3px solid $white;
   }
 }

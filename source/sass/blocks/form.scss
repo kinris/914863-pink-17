@@ -262,8 +262,8 @@
     border-radius: 3px;
 
     background: $light-gray;
-    width: 62px;
-    height: 62px;
+    width: 61px;
+    height: 61px;
   }
 }
 
@@ -317,6 +317,14 @@
 
 .form__text-footer--red {
   color: $dark-pink;
+}
+
+.form__text-footer--desktop-only {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }
 
 .form__radio {

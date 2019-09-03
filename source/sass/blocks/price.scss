@@ -1,14 +1,18 @@
 .price {
   @include reset;
   padding-top: 90px;
-  padding-bottom: 48px;
+  padding-bottom: 45px;
 
   position: relative;
 
   background-color: $background-gray;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 70px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-top: 140px;
+    padding-bottom: 95px;
   }
 
   &::before {

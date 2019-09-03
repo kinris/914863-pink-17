@@ -8,8 +8,6 @@
   background-color: $dark-blue;
 
   @media (min-width: $tablet-width) {
-    // margin-bottom: 50px;
-
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
@@ -40,34 +38,27 @@
 }
 
 .banner__wrapper {
-  @include reset;
   width: 320px;
-  margin: 0 auto;
 
   padding-bottom: 30px;
 
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position-x: -10px;
+  background-position-x: left;
   background-position-y: 175px;
 
   @media (min-width: $tablet-width) {
-    @include reset;
-    width: 620px;
-    margin: 0 auto;
+    width: auto;
     padding-top: 100px;
     padding-bottom: 100px;
 
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position-x: -40px;
-    background-position-y: 75px;
+    background-position-x: center;
+    background-position-y: bottom;
   }
 
   @media (min-width: $desktop-width) {
-    @include reset;
-    width: 940px;
-    margin: 0 auto;
     padding-top: 80px;
     padding-bottom: 120px;
 
@@ -80,11 +71,5 @@
   .banner__inner {
     @include reset;
     width: 300px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .banner__image {
-    display: none;
   }
 }
