@@ -66,6 +66,11 @@
   padding-top: $mobile-paddings;
   padding-bottom: $mobile-paddings;
 
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  box-sizing: border-box;
+
   text-align: left;
 
   background-color: $background-gray;
@@ -78,6 +83,7 @@
 .photos-list__deskription--wide {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -99,13 +105,13 @@
   padding-bottom: 10px;
 
   min-height: 48px;
-
-  order: 2;
 }
 
 .photos-list__text--wide {
   @media (min-width: $tablet-width) {
     @include reset;
+
+    order: 2;
   }
 }
 
@@ -140,8 +146,8 @@
 .photos-list__image-label {
   @include reset;
   @include section-paddings;
-  padding-top: 13px;
-  padding-bottom: 14px;
+  padding-top: 7px;
+  padding-bottom: 8px;
   display: inline-block;
   position: absolute;
   top: 0;
@@ -149,6 +155,8 @@
 
   background-color: $dark-pink;
 
+  font-size: 12px;
+  font-weight: 700;
   text-transform: uppercase;
 
   color: $white;

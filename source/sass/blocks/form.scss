@@ -1,11 +1,14 @@
 .form {
   @media (min-width: $tablet-width) {
-    padding-bottom: 50px;
+    margin-bottom: 90px;
+
     display: flex;
     flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -15,7 +18,7 @@
 .form__fieldset {
   @include reset;
   @include section-paddings;
-  padding-top: 42px;
+  padding-top: 36px;
   padding-bottom: 42px;
   margin-left: -($mobile-paddings);
   margin-right: -($mobile-paddings);
@@ -31,13 +34,18 @@
   @media (min-width: $tablet-width) {
     @include reset;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 63px;
     padding-left: 60px;
     padding-right: 60px;
     margin-bottom: 65px;
 
     border: 2px solid $light-gray;
     border-radius: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 57px;
+    padding-bottom: 55px;
   }
 }
 
@@ -51,6 +59,7 @@
 
 .form__fieldset--name {
   padding-top: 0;
+  margin-top: -20px;
 
   @media (min-width: $tablet-width) {
     @include reset;
@@ -60,6 +69,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 5px;
     width: 435px;
   }
 }
@@ -67,21 +77,26 @@
 .form__fieldset--achievement {
   @media (min-width: $tablet-width) {
     order: 4;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     padding-bottom: 10px;
+    padding-right: 10px;
   }
 }
 
 .form__fieldset--contacts {
   @media (min-width: $tablet-width) {
-    padding-bottom: 30px;
+    padding-top: 45px;
+    padding-bottom: 15px;
     order: 3;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 38px;
+    padding-bottom: 0;
     width: 100%;
   }
 }
@@ -93,16 +108,16 @@
 
   @media (min-width: $desktop-width) {
     width: 435px;
+    padding-left: 74px;
   }
 }
 
 .form__fieldset--emotions {
   @media (min-width: $tablet-width) {
     order: 5;
-  }
-
-  @media (min-width: $desktop-width) {
     width: 100%;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
 
@@ -136,7 +151,7 @@
 }
 
 .form__item {
-  padding-bottom: 20px;
+  padding-bottom: $mobile-paddings;
 
   position: relative;
 }
@@ -145,8 +160,12 @@
   padding-bottom: 0;
 }
 
-.form__item--style-2 {
-  padding-bottom: 40px;
+.form__item--radio {
+  padding-bottom: 35px;
+}
+
+.form__item--checkbox {
+  padding-bottom: 43px;
 }
 
 .form__item--name {
@@ -156,7 +175,7 @@
     align-items: baseline;
     justify-content: space-between;
 
-    padding-bottom: 55px;
+    padding-bottom: 54px;
   }
 }
 
@@ -164,8 +183,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column-reverse;
-
-    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -198,7 +215,7 @@
 }
 
 .form__title--style-2 {
-  padding-bottom: 40px;
+  padding-bottom: 36px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -229,8 +246,21 @@
 }
 
 .form__label--contacts {
+  display: inline-block;
+  padding-bottom: 5px;
+
   @media (min-width: $tablet-width) {
     padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.form__label--name {
+  display: inline-block;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
   }
 }
 
@@ -288,9 +318,20 @@
   min-height: 200px;
 
   resize: vertical;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    min-height: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 125px;
+  }
 }
 
 .form__footer {
+  padding-top: 10px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -299,6 +340,10 @@
     width: 100%;
 
     order: 6;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -336,10 +381,14 @@
 .form__radio + .form__text--radio {
   position: relative;
   display: block;
-  padding-left: 69px;
+  padding-left: 70px;
   padding-top: 5px;
   padding-bottom: 4px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 }
 
 .form__radio + .form__text--radio::before {
@@ -385,10 +434,14 @@
 .form__checkbox + .form__text--checkbox {
   position: relative;
   display: block;
-  padding-left: 69px;
+  padding-left: 70px;
   padding-top: 5px;
   padding-bottom: 4px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 }
 
 .form__checkbox + .form__text--checkbox::before {

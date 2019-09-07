@@ -17,12 +17,12 @@
     background: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: bottom;
+    background-position-y: -312px;
     background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
-    height: 500px;
+    height: 505px;
 
     background: url("../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;

@@ -1,27 +1,22 @@
 .page-footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-top: 55px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 36px;
-    padding-bottom: 36px;
+    margin-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 }
 
 .page-footer__wrapper {
-  @include reset;
-  margin: 0 auto;
-  display: block;
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
   }
 }
 
@@ -36,7 +31,7 @@
 .page-footer__logo {
   display: block;
 
-  padding-bottom: 40px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     @include reset;

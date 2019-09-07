@@ -7,7 +7,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 155px;
+    width: 157px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,14 +25,26 @@
 }
 
 .price-table__value {
-  padding-top: 13px;
-  padding-bottom: 19px;
+  padding-top: $mobile-paddings;
+  padding-bottom: $mobile-paddings;
 
   font-size: 18px;
   line-height: 30px;
   color: $white;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-top: 18px;
+    padding-bottom: 23px;
+  }
 }
 
 .price-table__value--hit::before {
@@ -58,20 +70,40 @@
 }
 
 .price-table__value--numeral {
-  @include page-title;
   @include reset;
+  @include page-title;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .price-table__item {
   @include reset;
-  height: 59px;
-  padding-left: 15px;
+  padding-left: 25px;
   padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-  line-height: 1em;
+  line-height: 30px;
   text-align: left;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    padding-left: 25px;
+    padding-right: 15px;
+    height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+  }
 }
 
 .price-table__item--yes {
@@ -96,20 +128,21 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .price-table__tariff {
+.price-table__option {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .price-table__tariff--tablet {
+.price-table__option--tablet {
+  @media (min-width: $tablet-width) {
     @include reset;
     display: block;
 
     text-transform: none;
+  }
 
+  @media (min-width: $desktop-width) {
     font-size: 18px;
-    line-height: 30px;
   }
 }

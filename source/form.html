@@ -14,7 +14,7 @@
   <header class="page-header">
 
     <nav class="main-nav">
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper container">
         <a class="main-nav__logo-image" href="index.html"></a>
 
         <button class="main-nav__toggle main-nav__toggle--open" type="button">
@@ -45,9 +45,9 @@
 
   <main class="page-main">
     <div class="banner">
-      <div class="banner__title">
+      <div class="banner__header container">
         <h1 class="page-title page-title--white">
-          Конкурс на самое безбашенное путешествие с Пинк
+          Конкурс&nbsp;на&nbsp;самое безбашенное путешествие&nbsp;с&nbsp;Пинк
         </h1>
       </div>
     </div>
@@ -66,19 +66,19 @@
         <ul class="form__list form__list--name">
 
           <li class="form__item form__item--name">
-            <label class="form__label" for="surname">Фамилия:</label>
+            <label class="form__label form__label--name" for="surname">Фамилия:</label>
             <input class="form__input form__text" type="text" name="surname" id="surname"
               placeholder="Укажите фамилию *" required>
           </li>
 
           <li class="form__item form__item--name">
-            <label class="form__label" for="name">Имя:</label>
+            <label class="form__label form__label--name" for="name">Имя:</label>
             <input class="form__input form__text" type="text" name="name" id="name" placeholder="Введите ваше имя *"
               required>
           </li>
 
           <li class="form__item form__item--name">
-            <label class="form__label" for="last-name">Отчество:</label>
+            <label class="form__label form__label--name" for="last-name">Отчество:</label>
             <input class="form__input form__text" type="text" name="last-name" id="last-name"
               placeholder="Ну и отчество тоже">
           </li>
@@ -93,32 +93,32 @@
 
         <ul class="form__list form__list--checkboxes">
 
-          <li class="form__item form__item--style-2">
+          <li class="form__item form__item--checkbox">
             <input class="form__checkbox" type="checkbox" name="selfi" id="selfi" checked>
             <label class=" form__text form__text--checkbox" for="selfi">Сделал селфи с акулой</label>
           </li>
 
-          <li class="form__item form__item--style-2">
+          <li class="form__item form__item--checkbox">
             <input class="form__checkbox" type="checkbox" name="beach" id="beach" checked>
             <label class=" form__text form__text--checkbox" for="beach">Обгорел на пляже</label>
           </li>
 
-          <li class="form__item form__item--style-2">
+          <li class="form__item form__item--checkbox">
             <input class="form__checkbox" type="checkbox" name="norris" id="norris">
             <label class=" form__text form__text--checkbox" for="norris">Видел Чака Норриса</label>
           </li>
 
-          <li class="form__item form__item--style-2">
+          <li class="form__item form__item--checkbox">
             <input class="form__checkbox" type="checkbox" name="souvenir" id="souvenir">
             <label class=" form__text form__text--checkbox" for="souvenir">Накупил сувениров</label>
           </li>
 
-          <li class="form__item form__item--style-2">
+          <li class="form__item form__item--checkbox">
             <input class="form__checkbox" type="checkbox" name="tower" id="tower" checked>
             <label class=" form__text form__text--checkbox" for="tower">Удержал башню</label>
           </li>
 
-          <li class="form__item form__item--style-2">
+          <li class="form__item form__item--checkbox">
             <input class="form__checkbox" type="checkbox" name="hotel" id="hotel">
             <label class=" form__text form__text--checkbox" for="hotel">Разгромил отель</label>
           </li>
@@ -152,17 +152,17 @@
         <div class="form__title form__title--style-2">С каким приложением путешествовали?</div>
 
         <ul class="form__list">
-          <li class="form__item form__item--style-2">
+          <li class="form__item form__item--radio">
             <input class="form__radio" type="radio" name="platform" id="ios" value="ios" checked>
             <label class=" form__text  form__text--radio" for="ios">Pink для iOS</label>
           </li>
 
-          <li class="form__item form__item--style-2">
+          <li class="form__item form__item--radio">
             <input class="form__radio" type="radio" name="platform" id="android" value="android">
             <label class=" form__text  form__text--radio" for="android">Pink на Android</label>
           </li>
 
-          <li class="form__item form__item--style-2">
+          <li class="form__item form__item--radio">
             <input class="form__radio" type="radio" name="platform" id="windows-phone" value="windows-phone">
             <label class=" form__text  form__text--radio" for="windows-phone">Windows Phone</label>
           </li>
@@ -177,7 +177,7 @@
 
         <ul class="form__list">
           <li class="form__item">
-            <textarea class="form__input form__textarea form__text" rows="5" name="emotion" id="emotion"
+            <textarea class="form__input form__textarea form__text" rows="1" name="emotion" id="emotion"
               placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </li>
         </ul>
@@ -240,9 +240,9 @@
       </ul>
 
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
+        <span class="copyright__text">Разработано</span>
         <a class="copyright__link" title="HTML Academy" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="img/logo-htmlacademy.svg" width="24" height="37" alt="HTML Academy">
+          <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
         </a>
       </div>
     </div>

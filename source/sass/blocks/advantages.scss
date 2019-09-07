@@ -1,10 +1,14 @@
 .advantages {
   @include reset;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__titles {
   padding-top: 40px;
-  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     padding-top: 50px;
@@ -12,8 +16,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -35,6 +41,29 @@
   }
 }
 
+// временно
+.advantages__title2 {
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    padding: 0 20px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include reset;
+
+    font-size: 50px;
+    line-height: 60px;
+    padding: 0 110px;
+  }
+}
+
+// -----------------
+
 .advantages__title:last-child {
   @include reset;
 }
@@ -51,10 +80,13 @@
     justify-content: center;
 
     max-width: none;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 60px;
+    margin-top: 85px;
+    margin-bottom: 0;
+    padding-bottom: 67px;
 
     display: flex;
     justify-content: center;
@@ -92,7 +124,7 @@
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     width: 157px;
-    height: 320px;
+    height: 280px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -108,8 +140,8 @@
   list-style: $list-style;
 
   @media (min-width: $tablet-width) {
-    padding-top: 90px;
-    padding-bottom: 0;
+    padding-top: 81px;
+    padding-bottom: 10px;
     margin-top: -90px;
     width: 620px;
 
@@ -128,7 +160,7 @@
     padding: 0;
 
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
 
     width: 960px;
@@ -138,15 +170,19 @@
 }
 
 .advantages__item {
-  padding-bottom: 32px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-    width: 292px;
+    @include reset;
+    width: 240px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     text-align: center;
   }
@@ -182,7 +218,161 @@
 
   @media (min-width: $desktop-width) {
     @include reset;
-    padding-bottom: 56px;
+    padding-bottom: 54px;
     display: block;
+  }
+}
+
+.advantages__effect-wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include reset;
+    padding-bottom: 67px;
+    max-width: none;
+
+    background-color: $background-gray;
+  }
+}
+
+.advantages__effect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 960px;
+    align-items: flex-start;
+  }
+}
+
+.advantages__icon-timer {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    padding-right: 70px;
+    width: 238px;
+    height: 276px;
+
+    fill: $timer-gray;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 20px;
+      top: 55px;
+
+      border: 14px solid $dark-pink;
+      border-radius: 50%;
+      width: 202px;
+      height: 202px;
+
+      box-sizing: border-box;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      left: 67px;
+      top: 50%;
+
+      font-size: 96px;
+      font-weight: 700;
+      color: $dark-pink;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    height: 345px;
+
+    &::before {
+      content: "";
+      left: 23px;
+      top: 69px;
+
+      border-width: 17px;
+      width: 253px;
+      height: 253px;
+    }
+
+    &::after {
+      content: "24";
+      left: 80px;
+      top: 176px;
+
+      font-size: 120px;
+    }
+  }
+}
+
+.advantages__svg-timer {
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+    width: 238px;
+    height: 276px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+    width: 298px;
+    height: 345px;
+  }
+}
+
+.advantages__effect-description {
+  @media (min-width: $tablet-width) {
+    @include reset;
+    width: 310px;
+
+    text-align: left;
+
+    list-style: $list-style;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-top: 93px;
+  }
+}
+
+.advantages__effect-title {
+  @media (min-width: $tablet-width) {
+    @include reset;
+
+    padding-bottom: 10px;
+    padding-right: $mobile-paddings;
+
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 25px;
+    line-height: 30px;
+  }
+}
+
+.advantages__text--link {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 10px;
+    color: $dark-pink;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
   }
 }
