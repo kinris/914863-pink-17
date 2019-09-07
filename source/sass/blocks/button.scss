@@ -12,6 +12,8 @@
 
   color: $white;
 
+  background-color: transparent;
+
   &:hover {
     background-color: $white;
     color: $dark-pink;
@@ -21,6 +23,10 @@
     background-color: $white;
     color: $light-pink;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .button--green {
@@ -29,10 +35,20 @@
   border: none;
   border-radius: 5px;
 
+  line-height: 30px;
+  text-transform: uppercase;
+
+
   background-color: $light-green;
 
   &:hover {
     background-color: $dark-green;
     color: $white;
+  }
+}
+
+.button--form {
+  @media (min-width: $tablet-width) {
+    width: 300px;
   }
 }

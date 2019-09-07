@@ -1,30 +1,24 @@
 .contacts {
-  @include reset;
-  @include section-paddings;
-
-  padding-top: 40px;
+  padding-top: 48px;
 
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    width: 620px;
+    padding-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
+    padding-top: 60px;
+    margin-bottom: 15px;
   }
 }
 
 .contacts__header {
   @include reset;
-  margin: 0 auto;
-  margin-bottom: 38px;
+  margin-bottom: 33px;
 
-  width: 280px;
-
-  @media (min-width: $tablet-width) {
-    width: 500px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
   }
 }
 
@@ -43,40 +37,59 @@
 }
 
 .contacts__list {
-  @include reset;
   list-style: $list-style;
 
   @media (min-width: $tablet-width) {
+    margin-top: 45px;
+
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: no-wrap;
+    margin-top: 56px;
+    justify-content: space-between;
   }
 }
 
 .contacts__item {
-  @include reset;
-  margin: 0 auto;
-  margin-bottom: 28px;
-  width: 240px;
+  padding-bottom: $mobile-paddings;
 
   @media (min-width: $tablet-width) {
-    width: 250px;
+    padding-bottom: 45px;
+    width: 300px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    @include reset;
   }
 }
 
-.contacts__item--write {
+.contacts__item--phone {
   @media (min-width: $desktop-width) {
     order: 1;
+  }
+}
+
+.contacts__item--mail {
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.contacts__item--address {
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: $mobile-paddings;
+
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include reset;
+    order: 2;
   }
 }
 
@@ -85,12 +98,24 @@
 
   font-weight: 700;
   font-size: 18px;
+  line-height: 26px;
 
   color: $dark-blue;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .contacts__link {
   @include page-title;
+  line-height: 30px;
+
+  text-decoration: none;
 
   color: $dark-pink;
+
+  @media (min-width: $tablet-width) {
+    line-height: 33px;
+  }
 }

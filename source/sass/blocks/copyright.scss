@@ -1,12 +1,29 @@
 .copyright {
   @include reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .copyright__text {
-  padding-right: 10px;
+  padding-right: 15px;
+
+  font-weight: 300;
+  line-height: 18px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 .copyright__link {
   vertical-align: middle;
   display: inline-block;
+}
+
+.copyright__image {
+  display: block;
 }

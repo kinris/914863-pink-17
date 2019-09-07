@@ -1,13 +1,13 @@
-.main-nav__wrapper {
-  @include reset;
-  @include section-paddings;
-  position: relative;
-
+.main-nav {
   @media (min-width: $desktop-width) {
-    @include reset;
-    margin: 0 auto;
-    width: 940px;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
 
+.main-nav__wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -17,23 +17,27 @@
 
 .main-nav__logo-image {
   display: block;
-  padding-top: $mobile-paddings;
-  padding-bottom: $mobile-paddings;
+  padding-top: 22px;
+  padding-bottom: 25px;
 
   background: url("../img/logo-pink-white-mobile.svg");
-  width: 150px;
+  width: 75px;
   height: 22px;
   background-repeat: no-repeat;
   background-position-y: center;
 
   @media (min-width: $tablet-width) {
     background: url("../img/logo-pink-white-tablet.svg");
+    padding-top: 27px;
+    padding-bottom: 41px;
+    width: 147px;
     height: 40px;
     background-repeat: no-repeat;
-    background-position-y: center;
+    background-position-y: 25px;
   }
 
   @media (min-width: $desktop-width) {
+    @include reset;
     background: url("../img/logo-pink-white-desktop.svg");
     background-repeat: no-repeat;
     background-position-y: center;
@@ -58,6 +62,10 @@
   position: absolute;
   top: 22px;
   right: 20px;
+
+  @media (min-width: $tablet-width) {
+    top: 45px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;

@@ -1,92 +1,21 @@
 .reviews {
-  @include reset;
-  margin: 0 auto;
-
-  @include section-paddings;
-  padding-top: 44px;
+  margin-top: 40px;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    width: 620px;
+    padding-bottom: 20px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    @include reset;
-
-    width: auto;
-  }
-}
-
-.reviews__effect {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    @include reset;
-    padding-bottom: 100px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 auto;
-    width: 940px;
-
-    justify-content: space-between;
-  }
-}
-
-.reviews__image {
-  @media (min-width: $tablet-width) {
-    @include reset;
-    padding-right: 71px;
-
-    fill: $timer-gray;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 60px;
-    width: 303px;
-    height: 345px;
-  }
-}
-
-.reviews__list {
-  @media (min-width: $tablet-width) {
-    @include reset;
-    width: 310px;
-
-    text-align: left;
-
-    list-style: $list-style;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: auto;
-  }
-}
-
-.reviews__title {
-  @media (min-width: $tablet-width) {
-    @include reset;
-
-    padding-bottom: $mobile-paddings;
-    padding-right: 130px;
-
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-
-    line-height: 30px;
+    padding-bottom: 40px;
   }
 }
 
 .reviews__people {
   @media (min-width: $tablet-width) {
+    padding-bottom: 35px;
+
     display: flex;
     flex-direction: column-reverse;
   }
@@ -108,6 +37,10 @@
     display: block;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .reviews__name {
@@ -122,42 +55,30 @@
 
   @media (min-width: $tablet-width) {
     @include reset;
-    padding-bottom: 5px;
 
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
   }
 }
 
 .reviews__text {
   @include reset;
+  line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: $mobile-paddings;
-
-    line-height: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     font-size: 18px;
   }
-}
 
-.reviews__text--link {
-  @media (min-width: $tablet-width) {
-    color: $dark-pink;
-  }
-}
-
-.reviews__wrapper {
   @media (min-width: $desktop-width) {
-    @include reset;
-
-    background-color: $background-gray;
+    padding-bottom: 36px;
   }
 }
 
-.reviews__svg {
+.reviews__svg-quotes {
   display: none;
 
   @media (min-width: $desktop-width) {

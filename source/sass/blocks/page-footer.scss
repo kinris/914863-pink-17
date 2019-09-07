@@ -1,9 +1,9 @@
 .page-footer {
-  margin-top: 64px;
+  margin-top: 55px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 86px;
+    margin-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,20 +13,10 @@
 }
 
 .page-footer__wrapper {
-  @include reset;
-  margin: 0 auto;
-  display: block;
-
   @media (min-width: $tablet-width) {
-    width: 620px;
-
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 940px;
+    // align-items: center;
   }
 }
 
@@ -41,10 +31,16 @@
 .page-footer__logo {
   display: block;
 
-  padding-bottom: 40px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     @include reset;
+  }
+}
+
+.page-footer__image {
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
