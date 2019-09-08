@@ -16,7 +16,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    // align-items: center;
   }
 }
 
@@ -38,9 +37,17 @@
   }
 }
 
-.page-footer__image {
-  @media (min-width: $tablet-width) {
-    display: block;
+.page-footer__logo-mobile {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
   }
 }
 

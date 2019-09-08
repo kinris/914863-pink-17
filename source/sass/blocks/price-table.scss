@@ -17,7 +17,6 @@
 
 .price-table__head {
   background-color: $dark-blue;
-  // position: relative;
 }
 
 .price-table__body {
@@ -48,7 +47,7 @@
 }
 
 .price-table__value--hit::before {
-  content: "ХИТ";
+  content: "";
   display: block;
 
   position: absolute;
@@ -66,6 +65,29 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("/img/bg-hit.svg");
+  }
+}
+
+.price-table__value--hit::after {
+  content: "ХИТ";
+
+  @include font-base;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+
+  transform: rotate(-45deg);
+
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    top: 15px;
+    left: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    left: 10px;
   }
 }
 

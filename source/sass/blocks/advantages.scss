@@ -126,6 +126,11 @@
     width: 157px;
     height: 280px;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+      background-size: 157px auto;
+    }
+
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -152,6 +157,11 @@
     background-size: 268px 481px;
     background-repeat: no-repeat;
     background-position: left bottom;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: 268px auto;
+    }
 
     text-align: left;
   }
